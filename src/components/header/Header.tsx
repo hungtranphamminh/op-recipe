@@ -31,7 +31,7 @@ export default function MainHeader() {
           {/* nav section */}
           <div className="flex items-center justify-center gap-4 font-medium px-4 py-2 border border-white border-opacity-60 rounded-3xl">
             {/* Home */}
-            <Link href="" className={getStyle("/")}>
+            <Link href="" className={getStyle("/home")}>
               Home
             </Link>
             {/* contributor */}
