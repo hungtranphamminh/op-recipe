@@ -6,6 +6,10 @@ import RandomSection from "./RandomSection";
 import SeasonalIngredients from "./SeasonalIngredients";
 import RecipeWheel from "./RecipeWheel";
 
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 const MOCKUP_BB_SECTION: RandomSectionProp = {
   title: "THE 51 BEST DESSERT RECIPES FROM GOURMET",
   mainPost: {
