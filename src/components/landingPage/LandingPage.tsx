@@ -1,7 +1,7 @@
 import WhatToCook from "./WhatToCook";
 import ExpertAdvice from "./ExpertAdvice";
 import DietaryPreferences from "./DietaryPreference";
-import { SingleEAPostCard } from "../recipeCard/expertAdviceCard";
+import { SingleEAPostCard } from "../recipe-card/expertAdviceCard";
 import RandomSection from "./RandomSection";
 import SeasonalIngredients from "./SeasonalIngredients";
 import RecipeWheel from "./RecipeWheel";

@@ -2,10 +2,9 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Mousewheel, Keyboard } from "swiper/modules";
-import { RecipeSwiperCard } from "../recipeCard/RecipeAndMenuCard";
+import { RecipeSwiperCard } from "../recipe-card/RecipeAndMenuCard";
 
 // Import Swiper styles
-
 
 const MOCKUP_DP_POST = [
   {

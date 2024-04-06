@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SingleRecipeSummary from "./recipe-summary";
 import SingleRecipeStep from "./recipe-step";
+import AdditionalInfoRec from "./recipe-additional";
 
 const MOCKUP_SINGLE_REC = {
   name: "Beef Bourguignon",
@@ -8,10 +9,25 @@ const MOCKUP_SINGLE_REC = {
   author: "INA GARTEN",
   createdAt: "January 10, 2024",
   level: "Intermediate",
+  tags: [
+    "French Recipes",
+    "European Recipes",
+    "Beef Bourguignon",
+    "Meat",
+    "Carrot",
+    "Recipes",
+    "Vegetable",
+    "Mushroom",
+    "Tomato",
+    "Bacon Recipes",
+    "Beef",
+  ],
+  description:
+    "Beef Bourguignon: A timeless French classic, featuring tender chunks of chuck beef, caramelized onions, and carrots, all simmered to perfection in a rich broth infused with red wine and aromatic herbs. This hearty stew delivers a symphony of flavors with every spoonful, making it a comforting and indulgent choice for any occasion.",
   time: {
-    total: "1 hr 45 min",
-    prep: "30 min",
-    cook: "1 hr 15 min",
+    total: "1 hour 45 minutes",
+    prep: "30 minutes",
+    cook: "1 hour 15 minutes",
   },
   imgUrl:
     "https://res.cloudinary.com/dyeiygws0/image/upload/v1711892692/beef_bd8xfg.jpg",
@@ -48,6 +64,7 @@ export default function SingleRecipe() {
   return (
     <div className="bg-white w-full h-full pt-[100px]">
       <SingleRecipeSummary recipeInfo={MOCKUP_SINGLE_REC} />
+      <AdditionalInfoRec recipeInfo={MOCKUP_SINGLE_REC} />
       <SingleRecipeStep recipeInfo={MOCKUP_SINGLE_REC} />
     </div>
   );

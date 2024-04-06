@@ -4,7 +4,7 @@ import starIcon from "@/assets/star.svg";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Mousewheel, Keyboard } from "swiper/modules";
-import { RecipeWheelSwiperCard } from "../recipeCard/RecipeAndMenuCard";
+import { RecipeWheelSwiperCard } from "../recipe-card/RecipeAndMenuCard";
 
 const PREFERENCES = ["All", "Vegetarian", "Vegan", "Gluten-Free", "Dairy-Free"];
 
