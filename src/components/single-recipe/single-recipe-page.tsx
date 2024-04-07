@@ -22,6 +22,15 @@ const MOCKUP_SINGLE_REC = {
     "Bacon Recipes",
     "Beef",
   ],
+  nutrition: {
+    calories: "100",
+    total_fat: "5g",
+    sugar: "2g",
+    sodium: "2g",
+    fiber: "3g",
+    protein: "10g",
+    carbohydrate: "20g",
+  },
   description:
     "Beef Bourguignon: A timeless French classic, featuring tender chunks of chuck beef, caramelized onions, and carrots, all simmered to perfection in a rich broth infused with red wine and aromatic herbs. This hearty stew delivers a symphony of flavors with every spoonful, making it a comforting and indulgent choice for any occasion.",
   time: {

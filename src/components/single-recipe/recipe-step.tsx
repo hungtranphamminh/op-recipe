@@ -37,39 +37,8 @@ export default function SingleRecipeStep({ recipeInfo }: any) {
             })}
           </div>
         </div>
-        {/* more info */}
-        <div className="max-w-[390px] w-full px-4">
-          <div className="w-full font-renner font-bold text-[20px] leading-[28px] text-black mb-6 pb-4 border-b-2 border-b-[rgb(226,221,204)]">
-            Additional Info
-          </div>
-          <div className="gap-2.5 flex flex-col items-start justify-between">
-            {/* level */}
-            <div>
-              Level:
-              <span className="font-bold ml-1">{recipeInfo.level}</span>
-            </div>
-            {/* total */}
-            <div>
-              Total:
-              <span className="font-bold ml-1">{recipeInfo.time.total}</span>
-            </div>
-            {/* prep */}
-            <div>
-              Prep:
-              <span className="font-bold ml-1">{recipeInfo.time.prep}</span>
-            </div>
-            {/* cook */}
-            <div>
-              Cook:
-              <span className="font-bold ml-1">{recipeInfo.time.cook}</span>
-            </div>
-            {/* cook */}
-            <div>
-              Yield:
-              <span className="font-bold ml-1">6 servings</span>
-            </div>
-          </div>
-        </div>
+        {/* related info */}
+        <div className="max-w-[390px] w-full px-4"></div>
       </section>
     </div>
   );

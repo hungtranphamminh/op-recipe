@@ -5,12 +5,14 @@ import cook from "@/images/single-rec/cook.svg";
 import level from "@/images/single-rec/level.svg";
 import cuisine from "@/images/single-rec/cuisine.svg";
 import download from "@/images/single-rec/download.svg";
+import linkrec from "@/images/single-rec/link.svg";
+import NutritionInfoBox from "./nutrition-box";
 
 export default function AdditionalInfoRec({ recipeInfo }: any) {
   return (
     <div className="w-full flex items-center flex-col">
       <section className="w-full max-w-[1440px] pt-6">
-        {/* additional info */}
+        {/* additional info top */}
         <div className="w-full flex items-center justify-between">
           {/* servings */}
           <div className="flex items-center">
@@ -74,8 +76,9 @@ export default function AdditionalInfoRec({ recipeInfo }: any) {
             </div>
           </div>
         </div>
-        {/* description */}
-        <div className="my-10">
+        {/* additional info bottom */}
+        <div className="my-10 flex relative items-center">
+          {/* description */}
           <div className="max-w-[900px]">
             <p className="font-stixToText text-[16px] leading-[27px] font-light mb-10">
               {recipeInfo.description}
@@ -83,7 +86,7 @@ export default function AdditionalInfoRec({ recipeInfo }: any) {
             {/* tags n download */}
             <div className="flex items-center justify-between">
               {/* tags */}
-              <div className="">
+              <div className="w-2/3">
                 <div className="font-renner">Tags</div>
                 <div className="flex flex-wrap font-renner mt-2">
                   {recipeInfo.tags.map((item: any, index: number) => {
@@ -99,10 +102,36 @@ export default function AdditionalInfoRec({ recipeInfo }: any) {
                   })}
                 </div>
               </div>
-              {/* download */}
-              <div className="flex items-center"></div>
+              {/* save */}
+              <div className="flex items-center gap-2">
+                {/* download */}
+                <div className="flex gap-2 items-center bg-primarydblue rounded-3xl px-2.5 py-1.5">
+                  <p className="text-white font-renner text-sm">
+                    Download Recipe PDF
+                  </p>
+                  <button className="rounded-full bg-white p-1.5">
+                    <Image
+                      src={download}
+                      alt="download"
+                      width={16}
+                      height={16}
+                    />
+                  </button>
+                </div>
+                {/* get link */}
+                <button className="rounded-full w-10 h-10 flex items-center justify-center bg-primarydblue">
+                  <Image
+                    src={linkrec}
+                    alt="link recipe"
+                    width={20}
+                    height={20}
+                  />
+                </button>
+              </div>
             </div>
           </div>
+          {/* nutrition */}
+          <NutritionInfoBox />
         </div>
       </section>
     </div>
