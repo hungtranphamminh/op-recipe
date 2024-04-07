@@ -1,7 +1,7 @@
 import RecipeMenuPostCard, {
   MainFeaturedPostCard,
   SidePostCard,
-} from "../recipe-card/RecipeAndMenuCard";
+} from "../recipe-card/recipe-menu-card";
 
 const MOCKUP_RM_POSTS = [
   {

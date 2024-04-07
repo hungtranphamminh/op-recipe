@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Mousewheel, Keyboard } from "swiper/modules";
-import { RecipeSwiperCard } from "../recipe-card/RecipeAndMenuCard";
+import { RecipeSwiperCard } from "../recipe-card/recipe-menu-card";
 
 // Import Swiper styles
 

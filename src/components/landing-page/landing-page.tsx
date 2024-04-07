@@ -1,10 +1,10 @@
-import WhatToCook from "./WhatToCook";
-import ExpertAdvice from "./ExpertAdvice";
-import DietaryPreferences from "./DietaryPreference";
-import { SingleEAPostCard } from "../recipe-card/expertAdviceCard";
-import RandomSection from "./RandomSection";
-import SeasonalIngredients from "./SeasonalIngredients";
-import RecipeWheel from "./RecipeWheel";
+import WhatToCook from "./what-to-cook";
+import ExpertAdvice from "./expert-advice";
+import DietaryPreferences from "./dietary-experience";
+import { SingleEAPostCard } from "../recipe-card/expert-advice-card";
+import RandomSection from "./random-section";
+import SeasonalIngredients from "./seasonal-ingre";
+import RecipeWheel from "./recipe-wheel";
 
 import "swiper/css";
 import "swiper/css/navigation";

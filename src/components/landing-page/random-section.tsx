@@ -1,7 +1,7 @@
 /* TODO: decide if this section should be turned into dyn w real data */
 
 import { Rating } from "@mui/material";
-import { BestFromBookSideCard } from "../recipe-card/RecipeAndMenuCard";
+import { BestFromBookSideCard } from "../recipe-card/recipe-menu-card";
 import Image from "next/image";
 
 const MOCKUP_RM_POST = [

@@ -1,4 +1,4 @@
-import { SeasonalIngredientCard } from "../recipe-card/ingredientCard";
+import { SeasonalIngredientCard } from "../recipe-card/ingredient-card";
 
 const MOCKUP_SI_POSTS = [
   {

@@ -1,4 +1,4 @@
-import ExpertAdviceDefaultCard from "../recipe-card/expertAdviceCard";
+import ExpertAdviceDefaultCard from "../recipe-card/expert-advice-card";
 
 const MOCKUP_EA_POSTS = [
   {

@@ -1,4 +1,4 @@
-import { LandingPage } from "@/components/landingPage/LandingPage";
+import { LandingPage } from "@/components/landing-page/landing-page";
 
 import "swiper/css";
 import "swiper/css/navigation";
