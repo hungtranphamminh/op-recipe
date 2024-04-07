@@ -2,7 +2,7 @@ export default function SingleRecipeStep({ recipeInfo }: any) {
   return (
     <div className="w-full flex items-center flex-col">
       {/* main information */}
-      <section className="w-full max-w-[1440px] flex items-start justify-between pt-6">
+      <section className="w-full max-w-[1050px] flex items-start justify-between pt-6">
         {/* ingredients */}
         <div className="max-w-[390px] w-full px-2">
           <div className="w-full font-renner font-bold text-[20px] leading-[28px] text-black mb-6 pb-4 border-b-2 border-b-[rgb(226,221,204)]">
@@ -20,7 +20,7 @@ export default function SingleRecipeStep({ recipeInfo }: any) {
           })}
         </div>
         {/* steps */}
-        <div className="grow flex flex-col items-center">
+        <div className="grow max-w-[660px] flex flex-col items-center">
           <div className="w-full font-renner text-center font-bold text-[20px] leading-[28px] text-black mb-6 pb-4 border-b-2 border-b-[rgb(226,221,204)]">
             Directions
           </div>
@@ -37,8 +37,6 @@ export default function SingleRecipeStep({ recipeInfo }: any) {
             })}
           </div>
         </div>
-        {/* related info */}
-        <div className="max-w-[390px] w-full px-4"></div>
       </section>
     </div>
   );

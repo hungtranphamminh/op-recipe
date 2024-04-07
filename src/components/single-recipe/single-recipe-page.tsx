@@ -2,6 +2,7 @@ import Image from "next/image";
 import SingleRecipeSummary from "./recipe-summary";
 import SingleRecipeStep from "./recipe-step";
 import AdditionalInfoRec from "./recipe-additional";
+import RelatedRecipes from "../related/single-recipe-related";
 
 const MOCKUP_SINGLE_REC = {
   name: "Beef Bourguignon",
@@ -72,9 +73,18 @@ const MOCKUP_SINGLE_REC = {
 export default function SingleRecipe() {
   return (
     <div className="bg-white w-full h-full pt-[100px]">
+      {/* recipe summarize & image */}
       <SingleRecipeSummary recipeInfo={MOCKUP_SINGLE_REC} />
+      {/* additional recipe info */}
       <AdditionalInfoRec recipeInfo={MOCKUP_SINGLE_REC} />
-      <SingleRecipeStep recipeInfo={MOCKUP_SINGLE_REC} />
+      <div className="w-full mx-auto max-w-[1440px] flex items-start justify-between">
+        {/* main recipe content */}
+        <div>
+          <SingleRecipeStep recipeInfo={MOCKUP_SINGLE_REC} />
+        </div>
+        {/* related posts and recipes */}
+        <RelatedRecipes />
+      </div>
     </div>
   );
 }

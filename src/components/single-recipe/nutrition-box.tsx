@@ -8,10 +8,10 @@ const NutritionInfoBox = () => {
 
   return (
     <div className="absolute right-0 top-0">
-      <div className=" bg-white rounded-xl shadow-md flex items-center relative">
+      <div className=" bg-white rounded-xl shadow-md flex items-center w-[356px] relative">
         {/* nutrition */}
         <div
-          className={`transition-all font-renner duration-300 overflow-hidden   ${
+          className={`transition-all w-[356px] font-renner duration-300 overflow-hidden   ${
             !isOpen ? "max-h-[110px]" : "max-h-52"
           }`}
         >
