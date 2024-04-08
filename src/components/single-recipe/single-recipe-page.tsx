@@ -1,12 +1,15 @@
 import Image from "next/image";
 import SingleRecipeSummary from "./recipe-summary";
-import SingleRecipeStep from "./recipe-step";
+import SingleRecipeStep from "./recipe-main";
 import AdditionalInfoRec from "./recipe-additional";
 import RelatedRecipes from "../related/single-recipe-related";
 
 const MOCKUP_SINGLE_REC = {
   name: "Beef Bourguignon",
-  rating: 4.5,
+  rating: {
+    points: 4.5,
+    votes: 198,
+  },
   author: "INA GARTEN",
   createdAt: "January 10, 2024",
   level: "Intermediate",

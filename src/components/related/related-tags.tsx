@@ -8,7 +8,7 @@ export default function RelatedTagsRecs({ tags }: { tags: string[] }) {
     <div className="border-[0.5px] border-slate-300 rounded-md">
       {/* Title */}
       <label>
-        <div className="w-full flex items-center p-4 bg-primarydblue">
+        <div className="w-full flex items-center p-4 bg-primarydblue rounded-t-md">
           <div className="w-full text-center font-renner font-medium text-lg  text-white">
             Explore Recipes By
             <span className=" text-orange-400 italic ml-1">Tags</span>
