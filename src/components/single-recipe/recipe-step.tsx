@@ -29,7 +29,7 @@ export default function SingleRecipeStep({ recipeInfo }: any) {
               return (
                 <div
                   key={index}
-                  className="border-b border-b-[#e0e0e0] w-full text-left py-2 first-letter:text-4xl first-letter:float-left first-letter:font-bold first-letter:mr-3"
+                  className="border-b border-b-[#e0e0e0] w-full text-left py-2 first-letter:text-4xl first-letter:float-left first-letter:font-bold first-letter:mr-3 first-letter:bg-[url('/images/single-rec/orange2.png')] first-letter:p-1"
                 >
                   {item}
                 </div>
