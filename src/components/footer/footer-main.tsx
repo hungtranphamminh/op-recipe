@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="w-full px-10">
           <div className="w-full flex items-start justify-between">
             {/* desc */}
-            <div>
+            <div className="relative">
               {/* logo */}
               <div className="text-2xl font-bold font-renner">
                 Nom<span className="text-orange-500">Nom</span>

@@ -1,4 +1,17 @@
+import Image from "next/image";
+import o1 from "@/images/single-rec/o1.jpg";
+import o2 from "@/images/single-rec/o2.jpg";
+import o3 from "@/images/single-rec/o3.jpg";
+import o4 from "@/images/single-rec/o4.jpg";
+import o5 from "@/images/single-rec/o5.jpg";
+import o6 from "@/images/single-rec/o6.jpg";
+import o7 from "@/images/single-rec/o7.jpg";
+import o8 from "@/images/single-rec/o8.jpg";
+import o9 from "@/images/single-rec/o9.jpg";
+
 export default function SingleRecipeStep({ recipeInfo }: any) {
+  const bgSrc = [o1, o2, o3, o4, o5, o6, o7, o8, o9];
+
   return (
     <div className="w-full flex items-center flex-col">
       {/* main information */}
@@ -12,9 +25,12 @@ export default function SingleRecipeStep({ recipeInfo }: any) {
             return (
               <div
                 key={index}
-                className="font-srcSerif px-2 py-1 text-[14px] leading-[20px] font-normal"
+                className="font-srcSerif px-2 py-1 text-[14px] leading-[20px] font-normal relative overflow-hidden group"
               >
-                {item}
+                <div className="absolute inset-0 bg-orange-500 transform -translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></div>
+                <div className="relative group-hover:text-white group-hover:font-medium">
+                  {item}
+                </div>
               </div>
             );
           })}
@@ -29,9 +45,16 @@ export default function SingleRecipeStep({ recipeInfo }: any) {
               return (
                 <div
                   key={index}
-                  className="border-b border-b-[#e0e0e0] w-full text-left py-2 first-letter:text-4xl first-letter:float-left first-letter:font-bold first-letter:mr-3 first-letter:bg-[url('/images/single-rec/orange2.png')] first-letter:p-1"
+                  className="relative border-b border-b-[#e0e0e0] w-full first-letter:font-stixToText text-left first-letter:text-white py-2 first-letter:text-4xl first-letter:float-left first-letter:font-bold first-letter:mr-4 bg-contain first-letter:p-1"
                 >
-                  {item}
+                  <p className="relative z-10">{item}</p>
+                  <Image
+                    src={bgSrc[index % 9]}
+                    alt="orange"
+                    width={50}
+                    height={50}
+                    className="z-0 absolute top-1 -left-4"
+                  />
                 </div>
               );
             })}
