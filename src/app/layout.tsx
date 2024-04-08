@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Source_Serif_4, STIX_Two_Text } from "next/font/google";
 import "./globals.css";
-import MainHeader from "@/components/header/Header";
+import MainHeader from "@/components/header/header-main";
 import localFont from "next/font/local";
+import Footer from "@/components/footer/footer-main";
 
 const inter = Inter({ subsets: ["latin"] });
 const sourceSerif = Source_Serif_4({
@@ -37,6 +38,7 @@ export default function RootLayout({
         <main className="relative w-full bg-white">
           <MainHeader />
           {children}
+          <Footer />
         </main>
       </body>
     </html>

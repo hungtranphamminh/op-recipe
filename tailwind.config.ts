@@ -21,6 +21,9 @@ const config: Config = {
         stixToText: ['var(--font-stix-to-text)'],
         renner: ['var(--font-renner)']
       },
+      colors: {
+        primarydblue: '#1A2433'
+      }
     },
   },
   plugins: [],
