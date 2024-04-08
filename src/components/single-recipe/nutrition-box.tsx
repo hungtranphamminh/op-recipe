@@ -16,7 +16,7 @@ const NutritionInfoBox = () => {
           }`}
         >
           {/* title */}
-          <div className="flex items-center gap-3 bg-primarydblue p-3 rounded-t-xl">
+          <div className="flex items-center gap-3 bg-primarydblue p-3 rounded-t-xl justify-between">
             <div className="text-lg font-renner font-medium text-white">
               Nutritional Information
             </div>

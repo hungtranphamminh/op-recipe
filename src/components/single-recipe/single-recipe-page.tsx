@@ -83,7 +83,7 @@ export default function SingleRecipe() {
           <SingleRecipeStep recipeInfo={MOCKUP_SINGLE_REC} />
         </div>
         {/* related posts and recipes */}
-        <RelatedRecipes />
+        <RelatedRecipes recipeInfo={MOCKUP_SINGLE_REC} />
       </div>
     </div>
   );

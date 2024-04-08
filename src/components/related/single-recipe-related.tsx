@@ -1,5 +1,4 @@
-import Image from "next/image";
-import whitestar from "@/images/related/whitestar.svg";
+import RelatedTagsRecs from "./related-tags";
 import SameTagsRelated from "./same-tag-recipes";
 const MOCKUP_RELATED_REC_TAGS = {
   title: "French recipes",
@@ -27,13 +26,14 @@ const MOCKUP_RELATED_REC_TAGS = {
   ],
 };
 
-export default function RelatedRecipes() {
+export default function RelatedRecipes({ recipeInfo }: any) {
   return (
-    <div className="max-w-[390px] w-full pl-8">
+    <div className="max-w-[390px] w-full pl-8 flex flex-col gap-6">
       <div className="">You might like</div>
       {/* Recipe with same tags */}
       <SameTagsRelated {...MOCKUP_RELATED_REC_TAGS} />
       {/* Recommend tags */}
+      <RelatedTagsRecs tags={recipeInfo.tags} />
     </div>
   );
 }
