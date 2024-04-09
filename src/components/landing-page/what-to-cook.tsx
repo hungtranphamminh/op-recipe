@@ -61,7 +61,7 @@ const MOCKUP_SIDE_POSTS = [
 
 const WhatToCook = () => {
   return (
-    <div className="max-w-[1600px] mb-14 pt-[100px]">
+    <div className="max-w-[1440px] mb-14 pt-[100px]">
       <div className="bg-[#f5f1e7] px-16 w-full h-full">
         {/* title */}
         <div className="py-8 w-full text-center items-center justify-center">

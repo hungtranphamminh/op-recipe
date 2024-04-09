@@ -84,7 +84,7 @@ export const LandingPage = () => {
       <RandomSection {...MOCKUP_BB_SECTION} />
       <SeasonalIngredients />
       <RandomSection {...MOCKUP_WN_SECTION} />
-      <RecipeWheel />
+      {/* <RecipeWheel /> */}
     </div>
   );
 };

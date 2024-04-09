@@ -20,8 +20,8 @@ export default function SameTagsSecondaryRelated(
   return (
     <div className="border-[0.5px] border-slate-300 rounded-md mb-6">
       {/* Title */}
-      <div className="p-4 w-full text-center font-renner font-medium text-lg bg-primarydblue text-white rounded-t-md">
-        Others{" "}
+      <div className="p-4 w-full text-center font-renner font-medium text-lg bg-[url('/images/footer/bg3.jpeg')] bg-[length:3300px]  bg-center text-white rounded-t-md ">
+        <span className="text-shadow-white">Others </span>
         <span className=" text-orange-400 italic">{sectionInfo.title}</span>
       </div>
       {/* posts */}
