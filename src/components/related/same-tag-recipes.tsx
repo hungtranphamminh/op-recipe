@@ -19,7 +19,7 @@ interface RelatedSectionInfo {
 
 export default function SameTagsRelated(sectionInfo: RelatedSectionInfo) {
   return (
-    <div className="border-[0.5px] border-slate-300 rounded-md">
+    <div className="border-[0.5px] border-slate-300 rounded-md shadow-md">
       {/* Title */}
       <div className="p-4 w-full text-center font-renner font-medium text-lg bg-[url('/images/footer/bg2.jpeg')] bg-[length:1000px] bg-right-bottom text-white rounded-t-md">
         <span className="text-shadow-white">Others </span>

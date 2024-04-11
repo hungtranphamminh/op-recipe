@@ -5,6 +5,7 @@ import { SingleEAPostCard } from "../recipe-card/expert-advice-card";
 import RandomSection from "./random-section";
 import SeasonalIngredients from "./seasonal-ingre";
 import RecipeWheel from "./recipe-wheel";
+import PersonalRecommendations from "./personal-rec";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -77,13 +78,13 @@ const MOCKUP_WN_SECTION: RandomSectionProp = {
 export const LandingPage = () => {
   return (
     <div className="w-full bg-white flex flex-col items-center justify-start">
-      <WhatToCook />
-      <ExpertAdvice />
-      <DietaryPreferences />
-      <SingleEAPostCard />
-      <RandomSection {...MOCKUP_BB_SECTION} />
-      <SeasonalIngredients />
-      <RandomSection {...MOCKUP_WN_SECTION} />
+      <PersonalRecommendations />
+      {/* <ExpertAdvice /> */}
+      {/* <DietaryPreferences /> */}
+      {/* <SingleEAPostCard /> */}
+      {/* <RandomSection {...MOCKUP_BB_SECTION} /> */}
+      {/* <SeasonalIngredients /> */}
+      {/* <RandomSection {...MOCKUP_WN_SECTION} /> */}
       {/* <RecipeWheel /> */}
     </div>
   );

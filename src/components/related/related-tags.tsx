@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function RelatedTagsRecs({ tags }: { tags: string[] }) {
   return (
-    <div className="border-[0.5px] border-slate-300 rounded-md">
+    <div className="border-[0.5px] border-slate-300 rounded-md shadow-md">
       {/* Title */}
       <label>
         <div className="w-full flex items-center p-4 bg-[url('/images/footer/bg4.jpeg')] bg-[length:950px] bg-opacity-40 bg-center rounded-t-md">
