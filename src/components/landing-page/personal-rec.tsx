@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Rating } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import author from "@/images/landing/wtc/author.svg";
 import authorblack from "@/images/landing/wtc/author-black.svg";
 import clock from "@/images/landing/wtc/clock.svg";
@@ -99,7 +99,8 @@ export interface RecommendRecipe {
 
 const PersonalRecommendations = () => {
   const [rec, setRec] = useState<RecommendRecipe[]>();
-  const [currentIndex] = useState<number>(0);
+  const [currentIndex, setIndex] = useState<number>(0);
+  const [focus, isFocused] = useState<boolean>(false);
 
   useEffect(() => {
     fetchRecommend();
@@ -110,8 +111,20 @@ const PersonalRecommendations = () => {
     setRec(MOCKUP_RECOMMEND_RECS);
   };
 
+  useEffect(() => {
+    const switchRecipeInterval = setInterval(() => {
+      !focus &&
+        rec !== undefined &&
+        setIndex((prev) => (prev + 1) % rec.length);
+    }, 4000);
+
+    return () => {
+      clearInterval(switchRecipeInterval);
+    };
+  }, [focus, rec]);
+
   return (
-    <div className="w-full bg-[url('/images/footer/bg.jpeg')]  flex flex-col items-center bg-top py-10 mt-[120px]">
+    <div className="w-full bg-[url('/images/footer/bg.jpeg')] flex flex-col items-center bg-top py-10 mt-[120px] text ">
       <section className="max-w-[1440px] w-full flex flex-col items-center gap-10">
         {/* title */}
         <div className="font-renner text-3xl text-white">WHAT TO COOK</div>
@@ -123,6 +136,8 @@ const PersonalRecommendations = () => {
               style={{
                 backgroundImage: `url("${rec[currentIndex].imgUrl}")`,
               }}
+              onMouseOver={() => isFocused(true)}
+              onMouseLeave={() => isFocused(false)}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black via-60% via-transparent to-transparent rounded-b-2xl"></div>
               {/* recipe info */}
@@ -156,7 +171,7 @@ const PersonalRecommendations = () => {
                       </div>
                       <div className="flex flex-col md:text-base my-1 text-sm transition-all duration-300">
                         {/* cook time */}
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 ">
                           <Image
                             src={clock}
                             alt="clock"
@@ -196,7 +211,7 @@ const PersonalRecommendations = () => {
                       </div>
                     </div>
                     {/* description */}
-                    <p className=" text-sm max-w-[60%] md:max-h-[120px] text-ellipsis">
+                    <p className=" text-sm max-w-[60%] md:max-h-[120px] overflow-hidden text-ellipsis">
                       {rec[currentIndex].description}
                     </p>
                   </div>
@@ -205,7 +220,7 @@ const PersonalRecommendations = () => {
             </div>
           )}
           {/* other recommended recipes */}
-          <div className="grow flex flex-col justify-between md:h-[650px] overflow-hidden">
+          <div className="grow flex flex-col justify-between md:h-[650px]  ">
             {rec !== undefined &&
               rec
                 .filter((item, index) => index !== currentIndex)
