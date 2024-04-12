@@ -129,10 +129,13 @@ const PersonalRecommendations = () => {
               <div className="font-renner absolute z-10 bottom-6 px-6 w-full">
                 <div className="text-lg font-medium text-white mb-2">
                   {/* title */}
-                  <p className="font-medium md:text-4xl transition-all duration-300 underline-animation hover:text-orange-300 group-hover:text-[42px] w-fit">
+                  <p
+                    className="font-medium md:text-4xl transition-all duration-300
+                   group-hover:text-orange-300 group-hover:text-[42px] w-fit
+                   after:content-[''] after:block after:w-0 after:h-1 after:bg-orange-400 after:transition-all after:duration-300 after:group-hover:w-full after:group-hover:h-1 after:group-hover:mt-1 after:group-hover:ml-1 after:group-hover:rounded-full after:group-hover:opacity-100"
+                  >
                     {rec[currentIndex].title}
                   </p>
-
                   {/* additional info */}
                   <div className="flex items-start w-full gap-10 mt-3">
                     <div>
@@ -221,7 +224,12 @@ const PersonalRecommendations = () => {
                         <div className="font-renner px-2 text-primarydblue w-full ">
                           <div className="text-lg font-medium flex flex-col mb-2">
                             {/* title */}
-                            <p className="font-medium  transition-all duration-300 underline-animation-black w-fit">
+                            <p
+                              className="font-medium  transition-all duration-300 
+                            after:content-[''] after:block after:w-0 after:h-[0.4px] after:bg-[#1A2433] after:transition-all 
+                            after:duration-300 after:group-hover:w-full after:group-hover:rounded-full after:group-hover:opacity-100
+                            w-fit"
+                            >
                               {item.title}
                             </p>
                             {/* author */}

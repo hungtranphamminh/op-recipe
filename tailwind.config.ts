@@ -23,7 +23,7 @@ const config: Config = {
       },
       colors: {
         primarydblue: '#1A2433'
-      }
+      },
     },
   },
   plugins: [],
