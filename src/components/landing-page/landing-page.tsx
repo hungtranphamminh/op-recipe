@@ -10,6 +10,7 @@ import PersonalRecommendations from "./personal-rec";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import RecipeCollections from "./recipe-collections";
 
 const MOCKUP_BB_SECTION: RandomSectionProp = {
   title: "THE 51 BEST DESSERT RECIPES FROM GOURMET",
@@ -79,6 +80,7 @@ export const LandingPage = () => {
   return (
     <div className="w-full bg-white flex flex-col items-center justify-start">
       <PersonalRecommendations />
+      <RecipeCollections />
       {/* <ExpertAdvice /> */}
       {/* <DietaryPreferences /> */}
       {/* <SingleEAPostCard /> */}

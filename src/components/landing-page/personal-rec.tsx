@@ -124,10 +124,13 @@ const PersonalRecommendations = () => {
   }, [focus, rec]);
 
   return (
-    <div className="w-full bg-[url('/images/footer/bg.jpeg')] flex flex-col items-center bg-top py-10 mt-[120px] text ">
+    <div className="w-full bg-[url('/images/background/blackpaint.jpg')] flex flex-col items-center bg-top py-10 mt-[120px] text ">
       <section className="max-w-[1440px] w-full flex flex-col items-center gap-10">
         {/* title */}
-        <div className="font-renner text-3xl text-white">WHAT TO COOK</div>
+        <div className="font-renner text-3xl text-white">
+          WE WOULD LIKE TO RECOMMEND TO YOU{" "}
+          <span className="text-orange-200">PERSONALLY</span>
+        </div>
         <div className="w-full rounded-md flex gap-4 bg-white bg-opacity-5 backdrop-blur-md">
           {/* main recipe */}
           {rec !== undefined && (
@@ -226,7 +229,13 @@ const PersonalRecommendations = () => {
                 .filter((item, index) => index !== currentIndex)
                 .map((item, index) => {
                   return (
-                    <div className="w-full px-3" key={index}>
+                    <div
+                      className="w-full px-3"
+                      key={index}
+                      onMouseOver={() => isFocused(true)}
+                      onMouseLeave={() => isFocused(false)}
+                      onClick={() => setIndex(index)}
+                    >
                       <div className="relative rounded-md group hover:cursor-pointer flex items-center bg-white bg-opacity-80 hover:scale-105 transform transition-transform duration-300 shadow-lg">
                         {/* recipe image */}
                         <div
