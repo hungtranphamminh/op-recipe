@@ -43,7 +43,7 @@ export default function Greeting({ isActive }: { isActive: boolean }) {
           <div
             className="
           absolute z-[11] top-0 left-0 bg-[url('/images/landing/slide1/sauce1.png')] 
-          bg-[length:400px_200px] w-[400px] h-[200px]"
+          bg-[length:550px_275px] w-[550px] h-[275px]"
           ></div>
           {/* top left leaves */}
           <div
@@ -59,6 +59,21 @@ export default function Greeting({ isActive }: { isActive: boolean }) {
           <div
             className="absolute z-[12] bottom-1/3 left-0 bg-[url('/images/landing/slide1/dish2.png')] 
           bg-[length:300px_300px] w-[300px] h-[300px]"
+          ></div>
+          {/* bot left leaves */}
+          <div
+            className="absolute z-[12] bottom-[8%] left-[18%] bg-[url('/images/landing/slide1/leaves.png')] 
+          bg-[length:200px_175px] w-[200px] h-[175px]"
+          ></div>
+          {/* bot right pasta */}
+          <div
+            className="absolute z-[11] -bottom-0 -right-52 bg-[url('/images/landing/slide1/noodle1.png')] 
+          bg-[length:500px_495px] w-[500px] h-[495px]"
+          ></div>
+          {/* bot right pasta */}
+          <div
+            className="absolute z-[12] -bottom-80 right-14 bg-[url('/images/landing/slide1/dish1.png')] 
+          bg-[length:500px_500px] w-[500px] h-[500px]"
           ></div>
         </div>
       </div>
