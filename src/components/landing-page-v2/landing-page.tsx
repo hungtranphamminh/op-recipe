@@ -7,6 +7,7 @@ import { Mousewheel, Pagination } from "swiper/modules";
 import "@/styles/swiper.css";
 import { useState } from "react";
 import ExpertAdvice from "./expert-advice";
+import Collections from "./collections";
 
 export default function LandingPage() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -27,7 +28,9 @@ export default function LandingPage() {
         <SwiperSlide>
           <Greeting isActive={activeSlide === 0} />
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>
+          <Collections isActive={activeSlide === 1} />
+        </SwiperSlide>
         <SwiperSlide>
           <ExpertAdvice isActive={activeSlide === 2} />
         </SwiperSlide>

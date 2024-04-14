@@ -234,9 +234,7 @@ export default function Greeting({ isActive }: { isActive: boolean }) {
             and stir, we're whisking up wonderful flavors and memories. From
             comforting classics to daring innovations, our recipes are crafted
             to inspire and delight, whether you're a seasoned chef or a culinary
-            novice. Join us as we embark on a journey of culinary discovery, one
-            recipe at a time. Get ready to unleash your inner chef and savor the
-            magic of cooking with us!
+            novice.
           </p>
           <p className="text-black text-2xl font-playball w-full text-right mt-4">
             {" "}
