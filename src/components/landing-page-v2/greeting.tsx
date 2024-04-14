@@ -5,6 +5,18 @@ import {
 } from "@/utils/animation/landing-page/slide-1";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import Image from "next/image";
+const MotionImage = motion(Image);
+import sauce1 from "@/images/landing/slide1/sauce1.png";
+import leaves2 from "@/images/landing/slide1/leaves2.png";
+import cheese from "@/images/landing/slide1/cheese.png";
+import dish2 from "@/images/landing/slide1/dish2.png";
+import leaves from "@/images/landing/slide1/leaves.png";
+import noodle1 from "@/images/landing/slide1/noodle1.png";
+import dish1 from "@/images/landing/slide1/dish1.png";
+import leaves4 from "@/images/landing/slide1/leaves4.png";
+import leaves3 from "@/images/landing/slide1/leaves3.png";
+import dish3 from "@/images/landing/slide1/dish3.png";
 
 export default function Greeting({ isActive }: { isActive: boolean }) {
   const controls = useAnimation();
@@ -48,82 +60,151 @@ export default function Greeting({ isActive }: { isActive: boolean }) {
             variants={getHorizontalVariant(0.5, 2.0, "-550px")}
             initial="hidden"
             animate={controlBackground}
-            className="
-          absolute z-[11] top-0 left-0 bg-[url('/images/landing/slide1/sauce1.png')] 
-          bg-[length:550px_275px] w-[550px] h-[275px]"
-          ></motion.div>
+            className="absolute z-[11] top-0 left-0 w-[550px] h-[315px]"
+          >
+            <MotionImage
+              src={sauce1}
+              alt="sauce1"
+              width={450}
+              height={473}
+              objectFit="cover"
+            />
+          </motion.div>
           {/* top left leaves */}
           <motion.div
             variants={getFadeVariant(1.5, 0.8)}
             initial="hidden"
             animate={controlBackground}
-            className="absolute z-[12] -top-10 -left-28 bg-[url('/images/landing/slide1/leaves2.png')] 
-          bg-[length:153px_174px] w-[153px] h-[174px]"
-          ></motion.div>
+            className="absolute z-[12] -top-10 -left-28  w-[153px] h-[174px]"
+          >
+            <MotionImage
+              src={leaves2}
+              alt="leaves2"
+              width={153}
+              height={174}
+              objectFit="cover"
+            />
+          </motion.div>
           {/* bot left cheese */}
           <motion.div
             variants={getVerticalVariant(0.5, 2.0, "475px")}
             initial="hidden"
             animate={controlBackground}
-            className="absolute z-[11] -bottom-24 -left-40 bg-[url('/images/landing/slide1/cheese.png')] 
-          bg-[length:450px_475px] w-[450px] h-[475px]"
-          ></motion.div>
+            className="absolute z-[11] -bottom-24 -left-40 w-[450px] h-[473px] bg-cover"
+          >
+            <MotionImage
+              src={cheese}
+              alt="cheese"
+              width={450}
+              height={473}
+              objectFit="cover"
+            />
+          </motion.div>
           {/* left salmon */}
           <motion.div
             variants={getFadeVariant(0.8, 1.3)}
             initial="hidden"
             animate={controlBackground}
-            className="absolute z-[12] bottom-1/3 left-0 bg-[url('/images/landing/slide1/dish2.png')] 
-          bg-[length:300px_300px] w-[300px] h-[300px]"
-          ></motion.div>
+            className="absolute z-[12] bottom-1/3 left-0 w-[300px] h-[298px] bg-cover"
+          >
+            <MotionImage
+              src={dish2}
+              alt="dish2"
+              width={300}
+              height={298}
+              objectFit="cover"
+            />
+          </motion.div>
           {/* bot left leaves */}
           <motion.div
             variants={getFadeVariant(1.5, 0.8)}
             initial="hidden"
             animate={controlBackground}
-            className="absolute z-[12] bottom-[8%] left-[18%] bg-[url('/images/landing/slide1/leaves.png')] 
-          bg-[length:200px_175px] w-[200px] h-[175px]"
-          ></motion.div>
+            className="absolute z-[12] bottom-[8%] left-[18%] w-[200px] h-[175px]"
+          >
+            <MotionImage
+              src={leaves}
+              alt="leaves"
+              width={200}
+              height={175}
+              objectFit="cover"
+            />
+          </motion.div>
           {/* bot right pasta */}
           <motion.div
             variants={getHorizontalVariant(0.5, 1.3, "495px")}
             initial="hidden"
             animate={controlBackground}
-            className="absolute z-[11] -bottom-24 -right-52 bg-[url('/images/landing/slide1/noodle1.png')] 
-          bg-[length:500px_495px] w-[500px] h-[495px]"
-          ></motion.div>
+            className="absolute z-[11] -bottom-24 -right-52 w-[500px] h-[495px]"
+          >
+            <MotionImage
+              src={noodle1}
+              alt="leaves"
+              width={500}
+              height={495}
+              objectFit="cover"
+            />
+          </motion.div>
           {/* bot right dish */}
           <motion.div
             variants={getVerticalVariant(0.5, 2.0, "475px")}
             initial="hidden"
             animate={controlBackground}
-            className="absolute z-[13] -bottom-80 right-36 bg-[url('/images/landing/slide1/dish1.png')] 
-          bg-[length:500px_500px] w-[500px] h-[500px]"
-          ></motion.div>
+            className="absolute z-[13] -bottom-80 right-36 w-[500px] h-[500px]"
+          >
+            <MotionImage
+              src={dish1}
+              alt="dish1"
+              width={500}
+              height={500}
+              objectFit="cover"
+            />
+          </motion.div>
           {/* top leaves */}
           <motion.div
             variants={getVerticalVariant(0.5, 2.0, "-300px")}
             initial="hidden"
             animate={controlBackground}
-            className="absolute z-[12] -top-44 right-1/3 bg-[url('/images/landing/slide1/leaves4.png')] 
-          bg-[length:300px_300px] w-[300px] h-[300px]"
-          ></motion.div>
+            className="absolute z-[12] -top-44 right-1/3 w-[300px] h-[300px]"
+          >
+            <MotionImage
+              src={leaves4}
+              alt="leaves4"
+              width={300}
+              height={300}
+              objectFit="cover"
+            />
+          </motion.div>
           {/* top right leaves */}
           <motion.div
             variants={getFadeVariant(0.8, 1.3)}
             initial="hidden"
             animate={controlBackground}
-            className="absolute z-[11] top-24 right-0 bg-[url('/images/landing/slide1/leaves3.png')] 
-          bg-[length:400px_244px] w-[400px] h-[244px]"
-          ></motion.div>
+            className="absolute z-[11] top-24 right-0 w-[400px] h-[244px]"
+          >
+            <MotionImage
+              src={leaves3}
+              alt="leaves3"
+              width={400}
+              height={244}
+              objectFit="cover"
+            />
+          </motion.div>
           {/* top right dish */}
           <motion.div
             variants={getVerticalVariant(0.5, 2.0, "-300px")}
             initial="hidden"
             animate={controlBackground}
-            className="absolute z-[12] -top-20 right-2 bg-[url('/images/landing/slide1/dish3.png')] 
-          bg-[length:300px_300px] w-[300px] h-[300px]"
-          ></motion.div>
+            className="absolute z-[12] -top-20 right-2 w-[300px] h-[300px]"
+          >
+            <MotionImage
+              src={dish3}
+              alt="dish3"
+              width={300}
+              height={300}
+              objectFit="cover"
+            />
+          </motion.div>
         </div>
       </div>
       {/* greeting content */}
