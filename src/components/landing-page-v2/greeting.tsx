@@ -225,10 +225,10 @@ export default function Greeting({ isActive }: { isActive: boolean }) {
           className="max-w-[720px] flex flex-col items-center text-base text-[rgb(136,137,137)] mt-6"
         >
           <p>
-            Welcome to{" "}
-            <span className="font-srcSerif text-orange-400 font-semibold">
+            Welcome to <span className="font-bold font-stixToText">Nom</span>
+            <span className="font-stixToText font-bold text-orange-400 font-semibold">
               {" "}
-              NomNom
+              Nom
             </span>
             , where every dish is a masterpiece in the making. With each whisk
             and stir, we're whisking up wonderful flavors and memories. From

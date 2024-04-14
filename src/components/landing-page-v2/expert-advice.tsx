@@ -176,8 +176,9 @@ export default function ExpertAdvice({ isActive }: { isActive: boolean }) {
               animate={controlBackground}
               className="mt-6 text-base ml-10"
             >
-              <span className="font-srcSerif text-orange-400 font-semibold text-xl">
-                NomNom
+              <span className="font-stixToText font-bold text-xl"> Nom</span>
+              <span className="font-stixToText font-bold text-orange-400  text-xl">
+                Nom
               </span>{" "}
               presents the Expert Advice Hub, a treasure trove of culinary
               wisdom. From mastering kitchen fundamentals to discovering
