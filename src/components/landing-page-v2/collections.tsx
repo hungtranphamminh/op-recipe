@@ -19,7 +19,7 @@ import dish3 from "@/images/landing/slide1/dish3.png";
 
 const MotionImage = motion(Image);
 
-export default function Greeting({ isActive }: { isActive: boolean }) {
+export default function Collection({ isActive }: { isActive: boolean }) {
   const controls = useAnimation();
   const controls2 = useAnimation();
   const controls3 = useAnimation();

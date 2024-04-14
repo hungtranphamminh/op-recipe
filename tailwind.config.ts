@@ -21,6 +21,7 @@ const config: Config = {
         stixToText: ['var(--font-stix-to-text)'],
         renner: ['var(--font-renner)'],
         playball: ['var(--font-pb)'],
+        alexBrush: ['var(--font-ab)'],
       },
       colors: {
         primarydblue: '#1A2433'
