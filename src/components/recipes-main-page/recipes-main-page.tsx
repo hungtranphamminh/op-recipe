@@ -1,3 +1,4 @@
+import Recipes from "./recipes";
 import SearchBox from "./search-box";
 
 export default function RecipesMainPage() {
@@ -8,7 +9,9 @@ export default function RecipesMainPage() {
         {/* search box */}
         <SearchBox />
         {/* recipes */}
-        <div className="grow"></div>
+        <div className="grow">
+          <Recipes />
+        </div>
       </div>
     </div>
   );
