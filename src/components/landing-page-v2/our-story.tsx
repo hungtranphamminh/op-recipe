@@ -63,7 +63,7 @@ export default function OurStory({ isActive }: { isActive: boolean }) {
           variants={getVerticalVariant(0.9, 1.5, "50px")}
           initial="hidden"
           animate={controlBackground}
-          className="mt-6 text-base ml-10 text-white"
+          className="mt-6 text-base text-white text-center"
         >
           At{" "}
           <span className=" text-white font-semibold font-stixToText">Nom</span>
@@ -87,8 +87,21 @@ export default function OurStory({ isActive }: { isActive: boolean }) {
             <span className=" text-orange-300 font-semibold font-stixToText">
               Nom
             </span>
-            , anyone can cook.
+            ,
+            <br />
+            <span className="font-playball text-xl font-bold">
+              anyone can cook.
+            </span>
           </p>
+        </motion.div>
+        {/* navigate link */}
+        <motion.div
+          variants={getVerticalVariant(1.2, 1.5, "50px")}
+          initial="hidden"
+          animate={controlBackground}
+          className="py-4 px-9 mt-10 bg-primarydblue font-stixToText text-white font-semibold cursor-pointer hover:bg-white hover:text-orange-300 border hover:border-orange-200"
+        >
+          Start The Journey
         </motion.div>
       </div>
 

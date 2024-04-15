@@ -226,7 +226,7 @@ export default function Greeting({ isActive }: { isActive: boolean }) {
         >
           <p>
             Welcome to <span className="font-bold font-stixToText">Nom</span>
-            <span className="font-stixToText font-bold text-orange-400 font-semibold">
+            <span className="font-stixToText font-bold text-orange-400">
               {" "}
               Nom
             </span>
@@ -240,14 +240,6 @@ export default function Greeting({ isActive }: { isActive: boolean }) {
             {" "}
             Bon Appetit!
           </p>
-        </motion.div>
-        {/* navigate link */}
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={controls3}
-          className="py-4 px-9 bg-primarydblue text-white font-semibold cursor-pointer hover:bg-white hover:text-orange-300 transition-all duration-300 border hover:border-orange-200"
-        >
-          Explore our recipes
         </motion.div>
       </div>
     </div>
