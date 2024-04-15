@@ -15,7 +15,7 @@ type Actions = {
 };
 
 
-const useStore = create<State & Actions>((set) => ({
+const useRecipeStore = create<State & Actions>((set) => ({
   name: '',
   tags: [],
   ingredients: [],
@@ -26,4 +26,20 @@ const useStore = create<State & Actions>((set) => ({
   updateCollections: (collections) => set((state) => ({ ...state, collections })),
 }));
 
-export default useStore;
+export default useRecipeStore;
+
+export const useRecipeSearchParams = () => {
+  const state = useRecipeStore((state) => ({
+    name: state.name,
+    tags: state.tags,
+    ingredients: state.ingredients,
+    collections: state.collections,
+  }));
+
+  const updateName = useRecipeStore((state) => state.updateName);
+  const updateTags = useRecipeStore((state) => state.updateTags);
+  const updateIngredients = useRecipeStore((state) => state.updateIngredients);
+  const updateCollections = useRecipeStore((state) => state.updateCollections);
+
+  return { ...state, updateName, updateTags, updateIngredients, updateCollections };
+};
