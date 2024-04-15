@@ -184,8 +184,8 @@ export default function ExpertAdvice({ isActive }: { isActive: boolean }) {
               wisdom. From mastering kitchen fundamentals to discovering
               advanced techniques, our collection of curated posts and blogs
               offers invaluable insights from seasoned chefs and food
-              enthusiasts. Whether you're seeking to hone your skills or uncover
-              new culinary horizons, our expert advice hub is your go-to
+              enthusiasts. Whether you are seeking to hone your skills or
+              uncover new culinary horizons, our expert advice hub is your go-to
               destination
             </motion.div>
           </div>

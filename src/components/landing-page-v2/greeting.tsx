@@ -231,10 +231,10 @@ export default function Greeting({ isActive }: { isActive: boolean }) {
               Nom
             </span>
             , where every dish is a masterpiece in the making. With each whisk
-            and stir, we're whisking up wonderful flavors and memories. From
+            and stir, we are whisking up wonderful flavors and memories. From
             comforting classics to daring innovations, our recipes are crafted
-            to inspire and delight, whether you're a seasoned chef or a culinary
-            novice.
+            to inspire and delight, whether you are a seasoned chef or a
+            culinary novice.
           </p>
           <p className="text-black text-2xl font-playball w-full text-right mt-4">
             {" "}

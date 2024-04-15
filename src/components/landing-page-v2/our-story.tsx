@@ -73,14 +73,14 @@ export default function OurStory({ isActive }: { isActive: boolean }) {
           , we believe in the power of every individual to create culinary
           masterpieces.
           <p className="mt-3">
-            Whether you're an experienced chef or just starting your cooking
+            Whether you are an experienced chef or just starting your cooking
             journey, we are here to empower you. With easy-to-follow recipes,
-            expert tips, and a supportive community, we're dedicated to helping
+            expert tips, and a supportive community, we are dedicated to helping
             you unleash your inner chef.
           </p>
           <p className="mt-3">
-            Join us as we embark on a flavorful adventure together. Let's prove
-            that with{" "}
+            Join us as we embark on a flavorful adventure together. Let&apos;s
+            prove that with{" "}
             <span className=" text-white font-semibold font-stixToText">
               Nom
             </span>
