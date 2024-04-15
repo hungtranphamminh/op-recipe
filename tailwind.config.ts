@@ -19,11 +19,13 @@ const config: Config = {
       fontFamily: {
         srcSerif: ['var(--font-source-serif-4)'],
         stixToText: ['var(--font-stix-to-text)'],
-        renner: ['var(--font-renner)']
+        renner: ['var(--font-renner)'],
+        playball: ['var(--font-pb)'],
+        alexBrush: ['var(--font-ab)'],
       },
       colors: {
         primarydblue: '#1A2433'
-      }
+      },
     },
   },
   plugins: [],

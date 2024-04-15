@@ -1,6 +1,4 @@
 import Image from "next/image";
-import whitestar from "@/images/related/whitestar.svg";
-
 interface RelatedRecipeInfo {
   title: string;
   time: string;
@@ -20,10 +18,10 @@ export default function SameTagsSecondaryRelated(
   sectionInfo: RelatedSectionInfo
 ) {
   return (
-    <div className="border-[0.5px] border-slate-300 rounded-md mb-6">
+    <div className="border-[0.5px] border-slate-300 rounded-md mb-6 shadow-md">
       {/* Title */}
-      <div className="p-4 w-full text-center font-renner font-medium text-lg bg-primarydblue text-white">
-        Others{" "}
+      <div className="p-4 w-full text-center font-renner font-medium text-lg bg-[url('/images/footer/bg3.jpeg')] bg-[length:3300px]  bg-center text-white rounded-t-md ">
+        <span className="text-shadow-white">Others </span>
         <span className=" text-orange-400 italic">{sectionInfo.title}</span>
       </div>
       {/* posts */}
@@ -39,8 +37,6 @@ export default function SameTagsSecondaryRelated(
                   height={100}
                   className="rounded-md"
                 />
-                {/* adding 20px to the height to ensure the aesthetic : D */}
-
                 {/* related recipe info */}
                 <div className="font-renner px-2 text-primarydblue w-full group-hover:text-orange-400  transition-all duration-300">
                   <div className="text-lg font-medium flex flex-col mb-2">

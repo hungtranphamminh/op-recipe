@@ -10,13 +10,13 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-[url('/images/footer/bg.jpeg')] bg-[length:2600px] bg-left py-12">
+    <div className="relative bottom-0 left-0 w-full bg-[url('/images/footer/bg.jpeg')] bg-[length:2600px] bg-left py-12">
       <section className="w-full max-w-[1440px] px-10 ml-10 text-white">
         {/* top section */}
         <div className="w-full px-10">
           <div className="w-full flex items-start justify-between">
             {/* desc */}
-            <div>
+            <div className="relative">
               {/* logo */}
               <div className="text-2xl font-bold font-renner">
                 Nom<span className="text-orange-500">Nom</span>

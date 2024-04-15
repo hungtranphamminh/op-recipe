@@ -64,12 +64,12 @@ export default function SingleRecipeSummary({ recipeInfo }: any) {
           <div className=" flex gap-1 items-center font-renner">
             {/* in number */}
             <div className="font-bold text-[rgb(80,80,80)] text-[24px] leading-[28px]">
-              {recipeInfo.rating.toLocaleString()}
+              {recipeInfo.rating.points.toLocaleString()}
             </div>
             {/* in star */}
             <Rating
               name="read-only"
-              value={recipeInfo.rating}
+              value={recipeInfo.rating.points}
               readOnly
               sx={{
                 "& .MuiRating-iconFilled": {
@@ -89,7 +89,7 @@ export default function SingleRecipeSummary({ recipeInfo }: any) {
             />
             {/* number of ratings */}
             <div className="text-[rgb(117,117,117)] font-medium text-[12px] leading-[17px]">
-              {"(198)"}
+              {`(${recipeInfo.rating.votes})`}
             </div>
           </div>
           {/* read review */}
