@@ -22,6 +22,7 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "John Doe",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
   },
   {
     title: "Carrot Muffin",
@@ -29,6 +30,7 @@ export const MOCKUP_RECIPES = [
     rating: 5.0,
     votes: 200,
     author: "Jane Doe",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
   },
   {
     title: "Breakfast Sandwich",
@@ -36,6 +38,8 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 199,
     author: "Ellie Krieger",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Chicken Fajita Stuffed Peppers",
@@ -43,6 +47,8 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "John Doe",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Cauliflower Fritters",
@@ -50,6 +56,8 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "Kelly Senyei",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Napa Chicken Salad",
@@ -57,6 +65,8 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "Danielle Sepsy",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Chicken Pot Popovers",
@@ -64,20 +74,24 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "Angela Gaines",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
-  {
-    title: "Chocolate Spread",
-    imgUrl: chocolate.src,
-    rating: 4.5,
-    votes: 100,
-    author: "The Kitchen",
-  },
+  // {
+  //   title: "Chocolate Spread",
+  //   imgUrl: chocolate.src,
+  //   rating: 4.5,
+  //   votes: 100,
+  //   author: "The Kitchen",
+  // },
   {
     title: "Lentil Chili",
     imgUrl: lentilchili.src,
     rating: 4.5,
     votes: 100,
     author: "John Doe",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Dump Chicken Bake",
@@ -85,6 +99,8 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "Casey Elsass",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Mediterranean Baked Haddock",
@@ -92,6 +108,8 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "Emily Weinberger",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Mozzarella Sticks",
@@ -99,6 +117,8 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "John Doe",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Braised Lentils with Kale",
@@ -106,6 +126,8 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "Stephanie Alleyne",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Overnight Oats with Chia",
@@ -113,6 +135,8 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "Kelly Senyei",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Air Fryer Parmesan Chicken with Broccoli",
@@ -120,6 +144,8 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "John Doe",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
   {
     title: "Chipotle Beer-and-Butter Shrimp Foil Pack",
@@ -127,5 +153,7 @@ export const MOCKUP_RECIPES = [
     rating: 4.5,
     votes: 100,
     author: "John Doe",
+    description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
+
   },
 ]
