@@ -19,15 +19,15 @@ export default function MainHeader() {
         {/* <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent rounded-b-2xl z-10"></div> */}
         <div className="w-full flex items-center justify-between py-6 px-10 relative z-30 bg-white bg-opacity-30 backdrop-blur-xl">
           {/* logo n name */}
-          <div className="flex items-center">
+          <Link href="/welcome" className="flex items-center">
             {/* logo */}
             <div></div>
             {/* name */}
             <div className="text-black flex items-center text-2xl gap-2 font-bold">
               Nom
-              <p className="text-orange-500">Nom</p>
+              <p className="-ml-2 text-orange-500">Nom</p>
             </div>
-          </div>
+          </Link>
           {/* nav section */}
           <div className="flex items-center justify-center gap-4 font-medium px-4 py-2 border border-white border-opacity-60 rounded-3xl">
             {/* Home */}
@@ -39,7 +39,7 @@ export default function MainHeader() {
               Contributor
             </Link>
             {/* recipes */}
-            <Link href="" className={getStyle("/recipes")}>
+            <Link href="/recipes" className={getStyle("/recipes")}>
               Recipes
             </Link>
             {/* Expert Advices */}
