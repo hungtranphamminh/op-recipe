@@ -1,4 +1,6 @@
 "use client";
+import CollectionsSection from "../collections/collections";
+import PersonalRecommendations from "../home-page/personal-rec";
 import SingleRecipesSection from "./single-recipes";
 import { useState } from "react";
 
@@ -48,7 +50,9 @@ export default function RecipesMainPage() {
           })}
         </div>
         {/* section content */}
+        {section === 0 && <PersonalRecommendations />}
         {section === 1 && <SingleRecipesSection />}
+        {section === 2 && <CollectionsSection />}
       </div>
     </div>
   );
