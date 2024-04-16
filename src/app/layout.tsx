@@ -5,6 +5,7 @@ import {
   STIX_Two_Text,
   Playball,
   Alex_Brush,
+  Raleway,
 } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
@@ -17,6 +18,11 @@ const sourceSerif = Source_Serif_4({
 const stixToText = STIX_Two_Text({
   subsets: ["latin"],
   variable: "--font-stix-to-text",
+});
+
+const raleWay = Raleway({
+  subsets: ["latin"],
+  variable: "--font-raleway",
 });
 
 const renner = localFont({
@@ -49,7 +55,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${playball.variable} ${alexBrush.variable} ${sourceSerif.variable} ${stixToText.variable} ${renner.variable}`}
+        className={`${inter.className} 
+        ${raleWay.variable} ${playball.variable} ${alexBrush.variable} ${sourceSerif.variable} ${stixToText.variable} ${renner.variable}`}
       >
         <main className="relative w-full bg-white">{children}</main>
       </body>

@@ -22,6 +22,8 @@ const config: Config = {
         renner: ['var(--font-renner)'],
         playball: ['var(--font-pb)'],
         alexBrush: ['var(--font-ab)'],
+        raleWay: ['var(--font-raleway)'],
+
       },
       colors: {
         primarydblue: '#1A2433'

@@ -4,6 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import "@/styles/swiper.css";
 import golden from "@/images/landing/slide3/golden.png";
+import Link from "next/link";
 
 export default function OurStory({ isActive }: { isActive: boolean }) {
   const controlBackground = useAnimation();
@@ -101,7 +102,7 @@ export default function OurStory({ isActive }: { isActive: boolean }) {
           animate={controlBackground}
           className="py-4 px-9 mt-10 bg-primarydblue font-stixToText text-white font-semibold cursor-pointer hover:bg-white hover:text-orange-300 border hover:border-orange-200"
         >
-          Start The Journey
+          <Link href="/home">Start The Journey</Link>
         </motion.div>
       </div>
 

@@ -1,10 +1,5 @@
-import { motion, useAnimation } from "framer-motion";
-import { getVerticalVariant } from "@/utils/animation/landing-page/slide-1";
-
 import Image from "next/image";
 export default function CollectionCard(collectionInfo: any) {
-  const controlBackground = useAnimation();
-
   return (
     <div className="w-[44vh] h-[100vh] relative group">
       <Image
