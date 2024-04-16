@@ -97,7 +97,7 @@ export default function Recipes() {
               </div>
             </div>
             {/* description */}
-            <div className="px-2 italic mt-2 text-primarydblue text-xs h-[80px] hidden group-hover:block overflow-y-hidden text-ellipsis">
+            <div className="px-2 italic font-light mt-2 text-primarydblue text-xs h-[80px] hidden group-hover:block overflow-y-hidden text-ellipsis">
               {'"' + recipe.description + '"'}
             </div>
           </div>
