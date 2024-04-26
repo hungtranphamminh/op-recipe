@@ -124,7 +124,7 @@ const PersonalRecommendations = () => {
   }, [focus, rec]);
 
   return (
-    <div className="w-full bg-[url('/images/background/blackpaint.jpg')] flex flex-col items-center bg-top py-10 mt-[120px] text ">
+    <div className="w-full bg-[url('/images/background/blackpaint.jpg')] flex flex-col items-center bg-top py-10 text ">
       <section className="max-w-[1440px] w-full flex flex-col items-center gap-10">
         {/* title */}
         <div className="font-renner text-3xl text-white">

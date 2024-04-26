@@ -1,11 +1,13 @@
 "use server";
-import { SigninFormSchema, FormState } from "@/utils/lib/sign-in-authen";
+import { SignInFormState, SigninFormSchema } from "@/utils/lib/sign-in-authen";
 
-export async function signin(state: any, payload: any) {
-  // Validate form fields
+const MOCKUP_ACCESS_TOKEN = "1234567";
+
+export async function signin(currentState: SignInFormState, formData: any) {
+  //safe parse the form data
   const validatedFields = SigninFormSchema.safeParse({
-    email: payload.get("email"),
-    password: payload.get("password"),
+    email: formData.get("email"),
+    password: formData.get("password"),
   });
 
   // If any form fields are invalid, return early
@@ -15,14 +17,8 @@ export async function signin(state: any, payload: any) {
     };
   }
 
-  const { email, password } = validatedFields.data;
-
-  // Return a new Promise
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("Sign in with email:", email);
-      // Resolve the Promise after the delay
-      resolve({ message: "form data valid" });
-    }, 5000);
-  });
+  return {
+    token: "123456",
+    userId: "12345678",
+  };
 }

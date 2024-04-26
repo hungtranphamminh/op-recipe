@@ -13,7 +13,11 @@ export const SigninFormSchema = z.object({
     .trim(),
 });
 
-export type FormState =
+export type SignInFormState =
+  | {
+      token: string;
+      userId: string;
+    }
   | {
       errors?: {
         email?: string[];

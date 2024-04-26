@@ -6,8 +6,7 @@ import { useFormState, useFormStatus } from "react-dom";
 import SignInButton from "./sign-in-button";
 
 export default function SignIn() {
-  const [state, action] = useFormState(signin, undefined);
-  const { pending } = useFormStatus();
+  const [state, formAction] = useFormState(signin, undefined);
 
   return (
     <div className="w-full h-screen relative flex">
@@ -28,7 +27,7 @@ export default function SignIn() {
             <h1 className="text-2xl font-srcSerif font-medium">Sign in</h1>
             {
               /* sign in form */
-              <form action={action} className="mt-6">
+              <form action={formAction} className="mt-6">
                 {/* email */}
                 <h2 className="font-raleWay font-semibold text-sm">
                   Email Address
@@ -56,7 +55,7 @@ export default function SignIn() {
                     className=" px-2 py-1 w-full border-none focus:outline-none md: max-w-[500px]"
                   />
                 </div>
-                <SignInButton />
+                <SignInButton {...state} />
               </form>
             }
           </section>
