@@ -10,7 +10,7 @@ import { ClearAccountSession, GetAccountSession } from "@/utils/lib/session";
 const MOCKUP_USER = {
   userId: "1",
   avatar: "",
-  username: "GucciB",
+  username: "Gucci Bi",
 };
 
 export default function MainHeader() {
