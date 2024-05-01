@@ -45,7 +45,7 @@ export const BOTTOM_LINK = [
 export const QUICK_LINK = [
   {
     title: "Home",
-    href: "/",
+    href: "/home",
   },
   {
     title: "Contributor",
@@ -53,7 +53,7 @@ export const QUICK_LINK = [
   },
   {
     title: "Recipes",
-    href: "/",
+    href: "/recipes",
   },
   {
     title: "Expert Advices",

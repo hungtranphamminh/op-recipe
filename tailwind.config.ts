@@ -26,7 +26,8 @@ const config: Config = {
 
       },
       colors: {
-        primarydblue: '#1A2433'
+        primarydblue: '#1A2433',
+        primaryGolden: '#C5B358',
       },
     },
   },

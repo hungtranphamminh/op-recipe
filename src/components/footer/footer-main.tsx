@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="relative bottom-0 left-0 w-full bg-[url('/images/footer/bg.jpeg')] bg-[length:2600px] bg-left py-12">
+    <div className="relative bottom-0 left-0 w-full bg-black py-12">
       <section className="w-full max-w-[1440px] px-10 ml-10 text-white">
         {/* top section */}
         <div className="w-full px-10">
@@ -18,11 +18,11 @@ export default function Footer() {
             {/* desc */}
             <div className="relative">
               {/* logo */}
-              <div className="text-2xl font-bold font-renner">
-                Nom<span className="text-orange-500">Nom</span>
+              <div className="text-2xl font-bold font-raleWay">
+                Nom<span className="text-primaryGolden">Nom</span>
               </div>
               {/* desc */}
-              <div className="text-xs font-normal font-renner max-w-[500px] mt-4">
+              <div className="text-sm leading-[25px] font-normal font-raleWay max-w-[500px] mt-4 text-[rgb(136,136,136)]">
                 Founded in 2024, NomNom has been the ultimate food resource for
                 the home cook, featuring an AI-integrated engine tailored to
                 cooking tendencies, habits, and inspiration, along with over
@@ -42,14 +42,14 @@ export default function Footer() {
 
             {/* more link */}
             <div>
-              <div className="font-renner font-medium text-xs mb-4">
+              <div className="font-raleWay font-medium text-sm mb-4">
                 MORE FROM NOMNOM
               </div>
               {MORE_LINK.map((item, index) => {
                 return (
                   <div
                     key={index}
-                    className="font-renner font-medium text-xs mb-1 hover:underline"
+                    className="font-raleWay font-medium text-sm mb-1 hover:underline hover:text-[rgb(197,179,88)] text-[rgb(136,136,136)]"
                   >
                     <Link href={item.href}>{item.title}</Link>
                   </div>
@@ -58,14 +58,14 @@ export default function Footer() {
             </div>
             {/* quick link */}
             <div>
-              <div className="font-renner font-medium text-xs mb-4">
+              <div className="font-raleWay font-medium text-sm mb-4">
                 QUICK LINKS
               </div>
               {QUICK_LINK.map((item, index) => {
                 return (
                   <div
                     key={index}
-                    className="font-renner font-medium text-xs mb-1 hover:underline"
+                    className="font-raleWay font-medium mb-1 hover:underline hover:text-[rgb(197,179,88)] text-[rgb(136,136,136)] text-sm"
                   >
                     <Link href={item.href}>{item.title}</Link>
                   </div>
@@ -74,14 +74,14 @@ export default function Footer() {
             </div>
             {/* Connect us */}
             <div>
-              <div className="font-renner font-medium text-xs mb-4">
+              <div className="font-raleWay font-medium text-sm mb-4">
                 CONNECT
               </div>
               {CONNECT_LINK.map((item, index) => {
                 return (
                   <div
                     key={index}
-                    className="font-renner font-medium text-xs mb-1 hover:underline"
+                    className="font-raleWay font-medium text-sm mb-1 hover:underline hover:text-[rgb(197,179,88)] text-[rgb(136,136,136)]"
                   >
                     <Link href={item.href}>{item.title}</Link>
                   </div>
@@ -99,13 +99,13 @@ export default function Footer() {
               return (
                 <div
                   key={index}
-                  className="font-renner font-medium text-xs mb-1 hover:underline pr-3 border-r border-r-white"
+                  className="font-raleWay font-medium text-xs mb-1 hover:underline pr-3 border-r border-r-white"
                 >
                   <Link href={item.href}>{item.title}</Link>
                 </div>
               );
             })}
-            <div className="uppercase font-renner">
+            <div className="uppercase font-raleWay">
               do not sell my personal data
             </div>
           </div>
