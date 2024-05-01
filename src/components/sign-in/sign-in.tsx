@@ -20,7 +20,7 @@ export default function SignIn() {
           {/* logo */}
           <div className="text-4xl font-raleWay font-medium text-primarydblue">
             Nom
-            <span className="text-orange-400">Nom</span>
+            <span className="text-primaryGolden">Nom</span>
           </div>
           {/* sign in with email */}
           <section className="w-full mt-6 ">

@@ -86,7 +86,7 @@ export default function Collections({ isActive }: { isActive: boolean }) {
           variants={getVerticalVariant(0.9, 1.5, "50px")}
           initial="hidden"
           animate={controlBackground}
-          className="mt-6 w-10 h-[2px] bg-orange-300"
+          className="mt-6 w-10 h-[2px] bg-primaryGolden"
         ></motion.div>
 
         {/* content */}

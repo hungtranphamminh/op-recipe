@@ -7,7 +7,7 @@ export default function HeaderLanding({ atSlide }: any) {
         }`}
       >
         Nom
-        <span className="text-orange-500">Nom</span>
+        <span className="text-primaryGolden">Nom</span>
       </div>
     </div>
   );

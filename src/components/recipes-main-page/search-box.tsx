@@ -20,7 +20,7 @@ export default function SearchBox() {
     <div className="w-[350px] sticky top-0 left-0 ">
       {/* banner */}
       <div className=" font-bold font-playball text-white text-3xl w-full h-[150px] flex justify-center items-center my-4 bg-[url('/images/footer/bg4.jpeg')] bg-[length:800px_500px] bg-center rounded-sm">
-        Recipe <span className="text-orange-400 ml-2">Compass</span>
+        Recipe <span className="text-primaryGolden ml-2">Compass</span>
       </div>
 
       {/* search box */}

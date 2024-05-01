@@ -149,8 +149,8 @@ const PersonalRecommendations = () => {
                   {/* title */}
                   <p
                     className="font-medium md:text-4xl transition-all duration-300
-                   group-hover:text-orange-300 group-hover:text-[42px] w-fit
-                   after:content-[''] after:block after:w-0 after:h-1 after:bg-orange-400 after:transition-all after:duration-300 after:group-hover:w-full after:group-hover:h-1 after:group-hover:mt-1 after:group-hover:ml-1 after:group-hover:rounded-full after:group-hover:opacity-100"
+                   group-hover:text-primaryGolden group-hover:text-[42px] w-fit
+                   after:content-[''] after:block after:w-0 after:h-1 after:bg-primaryGolden after:transition-all after:duration-300 after:group-hover:w-full after:group-hover:h-1 after:group-hover:mt-1 after:group-hover:ml-1 after:group-hover:rounded-full after:group-hover:opacity-100"
                   >
                     {rec[currentIndex].title}
                   </p>
@@ -167,7 +167,7 @@ const PersonalRecommendations = () => {
                         />
                         <p className="font-medium md:text-base text-xs transition-all duration-300 mt-2">
                           RECIPE | Courtesy of <br />
-                          <span className="italic font-medium text-orange-500">
+                          <span className="italic font-medium text-primaryGolden">
                             {rec[currentIndex].author}
                           </span>
                         </p>

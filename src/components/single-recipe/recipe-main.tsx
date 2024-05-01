@@ -33,7 +33,7 @@ export default function SingleRecipeStep({ recipeInfo }: any) {
                     key={index}
                     className="font-srcSerif px-2 py-1 text-[14px] leading-[20px] font-normal relative overflow-hidden group"
                   >
-                    <div className="absolute inset-0 bg-orange-500 transform -translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></div>
+                    <div className="absolute inset-0 bg-primaryGolden transform -translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></div>
                     <div className="relative group-hover:text-white group-hover:font-medium">
                       {item}
                     </div>

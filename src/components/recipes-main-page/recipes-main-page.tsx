@@ -16,7 +16,7 @@ export default function RecipesMainPage() {
         <div className="font-raleWay text-6xl text-white tracking-widest">
           DELICACIES FOR EVERYONE
         </div>
-        <div className="w-40 h-[2px] bg-orange-300 my-6"></div>
+        <div className="w-40 h-[2px] bg-primaryGolden my-6"></div>
         <div className="font-alexBrush text-5xl text-[rgb(184,187,190)]">
           Recipes & Collections
         </div>

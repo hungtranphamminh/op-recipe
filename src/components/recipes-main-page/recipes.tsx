@@ -53,8 +53,8 @@ export default function Recipes() {
           >
             {/* title */}
             <h1
-              className="text-lg font-stixToText font-bold text-primarydblue group-hover:text-orange-300 group-hover:text-2xl w-fit
-                   after:content-[''] after:block after:w-0 after:h-1 after:bg-orange-300 after:transition-all after:duration-300 after:group-hover:w-full after:group-hover:h-1 after:group-hover:mt-[2px] after:group-hover:ml-1 after:group-hover:rounded-full after:group-hover:opacity-100"
+              className="text-lg font-stixToText font-bold text-primarydblue group-hover:text-primaryGolden group-hover:text-2xl w-fit
+                   after:content-[''] after:block after:w-0 after:h-1 after:bg-primaryGolden after:transition-all after:duration-300 after:group-hover:w-full after:group-hover:h-1 after:group-hover:mt-[2px] after:group-hover:ml-1 after:group-hover:rounded-full after:group-hover:opacity-100"
             >
               {recipe.title}
             </h1>
@@ -63,7 +63,7 @@ export default function Recipes() {
               <Image src={authorblack} alt="author" width={13} height={13} />
               <p className="font-medium text-xs transition-all duration-300 mt-2">
                 RECIPE | Courtesy of{" "}
-                <span className="italic font-medium text-orange-400 transition-all duration-300">
+                <span className="italic font-medium text-primaryGolden transition-all duration-300">
                   <span className="font-semibold">{recipe.author}</span>
                 </span>
               </p>

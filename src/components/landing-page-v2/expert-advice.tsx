@@ -166,7 +166,7 @@ export default function ExpertAdvice({ isActive }: { isActive: boolean }) {
               variants={getVerticalVariant(0.9, 1.5, "50px")}
               initial="hidden"
               animate={controlBackground}
-              className="mt-6 w-10 h-[2px] bg-orange-300"
+              className="mt-6 w-10 h-[2px] bg-primaryGolden"
             ></motion.div>
 
             {/* content */}
@@ -177,7 +177,7 @@ export default function ExpertAdvice({ isActive }: { isActive: boolean }) {
               className="mt-6 text-base ml-10"
             >
               <span className="font-stixToText font-bold text-xl"> Nom</span>
-              <span className="font-stixToText font-bold text-orange-400  text-xl">
+              <span className="font-stixToText font-bold text-primaryGolden  text-xl">
                 Nom
               </span>{" "}
               presents the Expert Advice Hub, a treasure trove of culinary

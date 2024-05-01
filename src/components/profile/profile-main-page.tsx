@@ -30,9 +30,9 @@ export default function UserProfile() {
 
   return (
     <div className="w-full bg-[url('/images/background/black-kitchen.jpeg')] bg-cover py-10">
-      <div className="mx-auto w-full max-w-[900px] h-[900px] bg-black bg-opacity-55 rounded-md">
+      <div className="mx-auto w-full max-w-[900px] h-[900px] bg-black bg-opacity-55 backdrop-blur-md rounded-md">
         {/* image */}
-        <div className="w-full flex items-start justify-start px-[60px] py-10">
+        <div className="w-full flex items-start justify-start px-[60px] py-10 gap-6">
           <div className="border-2 rounded-full p-1 shadow-md">
             {profile && (
               <Image
@@ -44,7 +44,7 @@ export default function UserProfile() {
               />
             )}
           </div>
-          <div className="grow border-t-2 mt-[75px] border-white p-6">
+          <div className="grow">
             <ProfileForm {...profile} />
           </div>
         </div>

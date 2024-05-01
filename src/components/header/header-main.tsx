@@ -94,7 +94,7 @@ export default function MainHeader() {
             {/* name */}
             <div className="text-white flex items-center text-4xl gap-2 font-medium">
               Nom
-              <p className="-ml-2 text-orange-500">Nom</p>
+              <p className="-ml-2 text-primaryGolden">Nom</p>
             </div>
           </Link>
           {/* nav section */}
