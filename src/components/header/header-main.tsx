@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import nullavatar from "@/images/profile/avatar.svg";
 import Image from "next/image";
 import { ClearAccountSession, GetAccountSession } from "@/utils/lib/session";
+import savew from "@/images/profile/white-save.svg";
+import saveg from "@/images/profile/golden-save.svg";
 
 const MOCKUP_USER = {
   userId: "1",
@@ -166,19 +168,21 @@ export default function MainHeader() {
           ) : (
             /* account */
             <div
-              className="relative h-[82px] flex items-center px-6 justify-center"
+              className="relative h-[82px] flex items-center px-6 justify-center gap-6"
               onMouseEnter={() => setHoverProfile(true)}
               onMouseLeave={() => setHoverProfile(false)}
             >
+              {/* saves */}
+              <Link href="/saves">
+                <Image
+                  src={currentPath.startsWith("/saves") ? saveg : savew}
+                  alt="avatar"
+                  width={40}
+                  height={40}
+                />
+              </Link>
               {/* profile button */}
               <button className="flex items-center justify-end gap-4 text-base font-medium group relative z-10">
-                <div>
-                  Hi,{" "}
-                  <span className="text-amber-200 mx-1 font-stixToText italic group-hover:underline">
-                    {username}
-                  </span>
-                  !
-                </div>
                 <div className="p-2 flex items-center justify-center rounded-full border border-white">
                   <Image
                     src={avatar ? avatar : nullavatar}
@@ -190,7 +194,7 @@ export default function MainHeader() {
               </button>
               {/* profile nav */}
               <div
-                className={`absolute top-[82px] bg-black bg-opacity-85 overflow-hidden w-full px-3  transition-all duration-300 
+                className={`absolute top-[82px] bg-black bg-opacity-85 overflow-hidden w-[200px] px-3  transition-all duration-300 
               ${hoverProfile ? "max-h-24 py-2" : "max-h-0"}
               h-full`}
               >
