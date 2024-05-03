@@ -1,4 +1,3 @@
-import SingleRecipesSection from "../recipes-main-page/single-recipes";
 import SavesRecipes from "./saves-recipes";
 
 export default function PersonalSaves() {

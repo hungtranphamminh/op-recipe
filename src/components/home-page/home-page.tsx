@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import RecipeCollections from "./recipe-collections";
+import RecommendedRecipes from "./recommended-recipes";
 
 const MOCKUP_BB_SECTION: RandomSectionProp = {
   title: "THE 51 BEST DESSERT RECIPES FROM GOURMET",
@@ -76,18 +77,17 @@ const MOCKUP_WN_SECTION: RandomSectionProp = {
   ],
 };
 
-export const LandingPage = () => {
+const HomePage = () => {
   return (
     <div className="w-full bg-white flex flex-col items-center justify-start">
-      <PersonalRecommendations />
-      <RecipeCollections />
-      {/* <ExpertAdvice /> */}
-      {/* <DietaryPreferences /> */}
-      {/* <SingleEAPostCard /> */}
-      {/* <RandomSection {...MOCKUP_BB_SECTION} /> */}
-      {/* <SeasonalIngredients /> */}
-      {/* <RandomSection {...MOCKUP_WN_SECTION} /> */}
-      {/* <RecipeWheel /> */}
+      {/* blank background 1 */}
+      <div className="w-full h-[200px]"></div>
+      {/* recommend recipes */}
+      <div className="w-full">
+        <RecommendedRecipes />
+      </div>
     </div>
   );
 };
+
+export default HomePage;
