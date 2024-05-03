@@ -8,7 +8,7 @@ export default function SingleRecipeSummary({ recipeInfo }: any) {
         {/* desc */}
         <div className="grow flex flex-col items-center justify-center">
           {/* gourmet tag */}
-          <div className="mb-3 px-3 py-2 text-white text-xs bg-orange-500 font-renner">
+          <div className="mb-3 px-3 py-2 text-white text-xs bg-primaryGolden font-renner">
             GOURMET
           </div>
           {/* name */}

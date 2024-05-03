@@ -93,7 +93,7 @@ export default function AdditionalInfoRec({ recipeInfo }: any) {
                     return (
                       <p
                         key={index}
-                        className="mr-1 text-sm text-orange-500 hover:underline hover:cursor-pointer transition-all duration-500"
+                        className="mr-1 text-sm text-primaryGolden hover:underline hover:cursor-pointer transition-all duration-500"
                       >
                         {item}
                         {index === recipeInfo.tags.length - 1 ? "" : ","}

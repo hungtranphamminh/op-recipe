@@ -23,7 +23,7 @@ export default function SameTagsRelated(sectionInfo: RelatedSectionInfo) {
       {/* Title */}
       <div className="p-4 w-full text-center font-renner font-medium text-lg bg-[url('/images/footer/bg2.jpeg')] bg-[length:1000px] bg-right-bottom text-white rounded-t-md">
         <span className="text-shadow-white">Others </span>
-        <span className=" text-orange-400 italic">{sectionInfo.title}</span>
+        <span className=" text-primaryGolden italic">{sectionInfo.title}</span>
       </div>
       {/* posts */}
       <div className=" flex flex-col w-full pb-3">

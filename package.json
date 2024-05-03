@@ -12,11 +12,13 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.11",
+    "@tanstack/react-query": "^5.32.0",
     "framer-motion": "^11.0.28",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
     "swiper": "^11.0.7",
+    "zod": "^3.23.3",
     "zustand": "^4.5.2"
   },
   "devDependencies": {

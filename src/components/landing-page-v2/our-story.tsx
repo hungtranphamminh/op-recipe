@@ -56,7 +56,7 @@ export default function OurStory({ isActive }: { isActive: boolean }) {
           variants={getVerticalVariant(0.9, 1.5, "50px")}
           initial="hidden"
           animate={controlBackground}
-          className="mt-6 w-10 h-[2px] bg-orange-300"
+          className="mt-6 w-10 h-[2px] bg-primaryGolden"
         ></motion.div>
 
         {/* content */}
@@ -68,7 +68,7 @@ export default function OurStory({ isActive }: { isActive: boolean }) {
         >
           At{" "}
           <span className=" text-white font-semibold font-stixToText">Nom</span>
-          <span className=" text-orange-300 font-semibold font-stixToText">
+          <span className=" text-primaryGolden font-semibold font-stixToText">
             Nom
           </span>
           , we believe in the power of every individual to create culinary
@@ -85,7 +85,7 @@ export default function OurStory({ isActive }: { isActive: boolean }) {
             <span className=" text-white font-semibold font-stixToText">
               Nom
             </span>
-            <span className=" text-orange-300 font-semibold font-stixToText">
+            <span className=" text-primaryGolden font-semibold font-stixToText">
               Nom
             </span>
             ,
@@ -100,7 +100,7 @@ export default function OurStory({ isActive }: { isActive: boolean }) {
           variants={getVerticalVariant(1.2, 1.5, "50px")}
           initial="hidden"
           animate={controlBackground}
-          className="py-4 px-9 mt-10 bg-primarydblue font-stixToText text-white font-semibold cursor-pointer hover:bg-white hover:text-orange-300 border hover:border-orange-200"
+          className="py-4 px-9 mt-10 bg-primarydblue font-stixToText text-white font-semibold cursor-pointer hover:bg-white hover:text-primaryGolden border hover:border-orange-200"
         >
           <Link href="/home">Start The Journey</Link>
         </motion.div>

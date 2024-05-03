@@ -226,7 +226,7 @@ export default function Greeting({ isActive }: { isActive: boolean }) {
         >
           <p>
             Welcome to <span className="font-bold font-stixToText">Nom</span>
-            <span className="font-stixToText font-bold text-orange-400">
+            <span className="font-stixToText font-bold text-primaryGolden">
               {" "}
               Nom
             </span>

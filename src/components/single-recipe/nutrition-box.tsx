@@ -20,7 +20,7 @@ const NutritionInfoBox = () => {
             <div className="text-lg font-renner font-medium text-white">
               Nutritional Information
             </div>
-            <div className="text-orange-400  px-2 py-1 ">per serving</div>
+            <div className="text-primaryGolden  px-2 py-1 ">per serving</div>
             <div className="w-6 h-6 flex items-center justify-center rounded-full bg-white">
               <Image
                 src={arrow}

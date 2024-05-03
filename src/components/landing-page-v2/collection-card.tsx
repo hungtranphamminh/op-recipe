@@ -18,7 +18,7 @@ export default function CollectionCard(collectionInfo: any) {
         <div className="font-playball text-4xl text-[rgb(187,187,188)]">
           Gastronomy
         </div>
-        <div className="mt-6 w-10 h-[2px] bg-orange-300"></div>
+        <div className="mt-6 w-10 h-[2px] bg-primaryGolden"></div>
         <div className="mt-6 font-renner text-white text-2xl font-medium">
           {" "}
           {collectionInfo.title}

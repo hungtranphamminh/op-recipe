@@ -11,7 +11,7 @@ export default function RelatedTagsRecs({ tags }: { tags: string[] }) {
         <div className="w-full flex items-center p-4 bg-[url('/images/footer/bg4.jpeg')] bg-[length:950px] bg-opacity-40 bg-center rounded-t-md">
           <div className="w-full text-center font-renner font-medium text-lg  text-white ">
             <span className="text-shadow-white">Explore Recipes By</span>
-            <span className=" text-orange-400 italic ml-1">Tags</span>
+            <span className=" text-primaryGolden italic ml-1">Tags</span>
           </div>
           <div className="w-6 h-6 flex items-center justify-center rounded-full bg-white">
             <Image
@@ -42,7 +42,7 @@ export default function RelatedTagsRecs({ tags }: { tags: string[] }) {
                 </div>
                 <Link
                   href=""
-                  className="text-base group-hover:text-orange-400 group-hover:font-medium group-hover:underline"
+                  className="text-base group-hover:text-primaryGolden group-hover:font-medium group-hover:underline"
                 >
                   {item}
                 </Link>

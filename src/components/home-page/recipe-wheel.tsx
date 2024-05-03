@@ -56,7 +56,7 @@ export default function RecipeWheel() {
           {/* recipe lists */}
           <div className="w-full h-full bg-green-300 flex flex-col">
             <div className="w-full bg-red-300 h-[75%]"></div>
-            <div className="w-full grow bg-orange-400 flex items-center justify-center">
+            <div className="w-full grow bg-primaryGolden flex items-center justify-center">
               {/* recipe controller */}
               <div className="w-full max-w-[900px] bg-blue-300 flex  gap-14 items-start justify-center">
                 {MOCKUP_VEGIE_RECIPES.map((item, index) => {
