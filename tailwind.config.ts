@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
-        'inset-orange': 'inset 0 -4px 6px -1px rgba(245, 158, 11, 0.7)', // adjust as needed
+        'inset-orange': 'inset 0 -4px 6px -1px rgba(245, 158, 11, 0.7)',
       },
       fontFamily: {
         srcSerif: ['var(--font-source-serif-4)'],
@@ -31,6 +31,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 };
 export default config;

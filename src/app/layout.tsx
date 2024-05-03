@@ -55,8 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} 
-        ${raleWay.variable} ${playball.variable} ${alexBrush.variable} ${sourceSerif.variable} ${stixToText.variable} ${renner.variable}`}
+        className={`${inter.className} ${raleWay.variable} ${playball.variable} ${alexBrush.variable} ${sourceSerif.variable} ${stixToText.variable} ${renner.variable}`}
       >
         <main className="relative w-full bg-white">{children}</main>
       </body>
