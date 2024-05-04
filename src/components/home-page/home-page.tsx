@@ -86,6 +86,10 @@ const HomePage = () => {
         <RecommendCard />
         <RecommendedRecipes />
       </div>
+      {/* dietary experiences */}
+      <div className="w-full bg-[url('/images/background/white_stone.jpg')]">
+        <DietaryPreferences />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,17 @@
+.swiper-pagination{
+  display: block !important;
+  position: relative !important;
+  margin-top: 10px;
+
+
+}
+
+.swiper-pagination-bullet-active {
+  background: #c5b358 !important;
+}
+
+.swiper-pagination-bullet-active {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+
+}
