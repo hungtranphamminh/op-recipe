@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import RecipeCollections from "./recipe-collections";
 import RecommendedRecipes from "./recommended-recipes";
-import Backgrounds from "./backgrounds";
+import RecommendCard from "../home-page-recommend/recommend-card";
 
 const MOCKUP_BB_SECTION: RandomSectionProp = {
   title: "THE 51 BEST DESSERT RECIPES FROM GOURMET",
@@ -81,12 +81,9 @@ const MOCKUP_WN_SECTION: RandomSectionProp = {
 const HomePage = () => {
   return (
     <div className="w-full bg-blue-300 flex flex-col items-center justify-start">
-      {/* blank background 1 */}
-      <div className="w-full h-[400px] overflow-hidden">
-        <Backgrounds />
-      </div>
       {/* recommend recipes */}
-      <div className="w-full flex items-center justify-center bg-white">
+      <div className="w-full flex flex-col items-center justify-center bg-white">
+        <RecommendCard />
         <RecommendedRecipes />
       </div>
     </div>
