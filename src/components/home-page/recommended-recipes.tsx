@@ -31,7 +31,7 @@ export default function RecommendedRecipes() {
   }, [name, tags, ingredients, collections]);
 
   return (
-    <div className="w-full flex bg-white flex-wrap items-start justify-center gap-[30px] 2xl:max-w-[1440px] pb-10">
+    <div className="w-full flex bg-white flex-wrap items-start justify-center gap-[30px] 2xl:max-w-[1440px] pb-10 shadow-md mb-10">
       {/* columns 1 */}
       {recipes && <FirstRecipeColumn recipes={[recipes[0], recipes[3]]} />}
       {/* columns 2 */}
