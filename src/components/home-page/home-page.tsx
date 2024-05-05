@@ -2,9 +2,7 @@ import WhatToCook from "./what-to-cook";
 import ExpertAdvice from "./expert-advice";
 import DietaryPreferences from "./dietary-experience";
 import { SingleEAPostCard } from "../recipe-card/expert-advice-card";
-import RandomSection from "./random-section";
 import SeasonalIngredients from "./seasonal-ingre";
-import RecipeWheel from "./recipe-wheel";
 import PersonalRecommendations from "./personal-rec";
 
 import "swiper/css";
@@ -90,6 +88,19 @@ const HomePage = () => {
       <div className="w-full bg-[url('/images/background/white_stone.jpg')]">
         <DietaryPreferences />
       </div>
+      {/*  */}
+      {/* seasonal ingredient */}
+      {/* <SeasonalIngredients /> */}
+      {/* recipe collections */}
+      <div className="w-full flex max-w-[1440px] ">
+        <RecipeCollections />
+      </div>
+      {/* seasonal */}
+      <div className="w-full max-w-[1440px]">
+        <SeasonalIngredients />
+      </div>
+      {/* expert advice */}
+      <ExpertAdvice />
     </div>
   );
 };
