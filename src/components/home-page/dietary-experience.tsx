@@ -5,8 +5,6 @@ import { Pagination, Navigation, Mousewheel, Keyboard } from "swiper/modules";
 import { RecipeSwiperCard } from "../recipe-card/recipe-menu-card";
 import "@/styles/swiper-diet.css";
 
-// Import Swiper styles
-
 const MOCKUP_DP_POST = [
   {
     postName: "Blueberry Compote With Coriander",
@@ -88,7 +86,7 @@ const DietaryPreferences = () => {
         <p className="text-[24px] leading-[26px] text-[rgb(51,51,51)] font-raleWay tracking-[0.1em] font-semibold">
           RECIPES BASED ON DIETARY PREFERENCES
         </p>
-        <div className="mt-4 mb-10 w-[100px] border-b-2 border-b-[rgb(235,0,0)] border-solid"></div>
+        <div className="mt-4 mb-10 w-[200px] border-b-2 border-b-primaryGolden border-solid"></div>
       </div>
       {/* main info  */}
       <div className="">
@@ -100,9 +98,9 @@ const DietaryPreferences = () => {
                 key={index}
                 className={`${
                   currentPref === index
-                    ? "bg-[rgb(51,51,51)] text-white  border-black"
-                    : "bg-[rgba(192,57,57,0.2)] text-[rgb(51,51,51)] border-transparent"
-                } text-[12px] leading-[17px] font-bold px-6 py-2 rounded-3xl border hover:border-black`}
+                    ? "bg-[rgb(51,51,51)] text-white  border-black border"
+                    : "bg-white border-primaryGolden border text-[rgb(51,51,51)] "
+                } text-[12px] leading-[17px] font-bold px-6 py-2 font-raleWay rounded-md border hover:border-primaryGolden hover:text-primaryGolden`}
                 onClick={() => handleSwitchPref(index)}
               >
                 {item}
