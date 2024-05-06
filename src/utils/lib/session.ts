@@ -1,12 +1,14 @@
 "use client"
+import Cookies from 'js-cookie'
+
 export const CreateAccountSession = (token: string) => {
-  localStorage.setItem("access-token", token)
+  Cookies.set('access-token', token, { path: '' })
 }
 
 export const GetAccountSession = () => {
-  return localStorage.getItem("access-token")
+  return Cookies.get('access-token')
 }
 
 export const ClearAccountSession = () => {
-  localStorage.removeItem("access-token")
+  Cookies.remove('access-token')
 }
