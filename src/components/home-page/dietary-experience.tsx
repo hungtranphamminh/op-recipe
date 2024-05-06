@@ -83,7 +83,7 @@ const DietaryPreferences = () => {
     <div className=" max-w-[1440px] px-16  mx-auto pb-[60px]">
       {/* section title */}
       <div className="w-full flex flex-col items-center justify-start pt-8">
-        <p className="text-[24px] leading-[26px] text-[rgb(51,51,51)] font-raleWay tracking-[0.1em] font-semibold">
+        <p className="text-[24px] leading-[26px] text-primarydblue font-raleWay tracking-[0.1em] font-semibold">
           RECIPES BASED ON DIETARY PREFERENCES
         </p>
         <div className="mt-4 mb-10 w-[200px] border-b-2 border-b-primaryGolden border-solid"></div>

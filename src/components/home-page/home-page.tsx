@@ -1,4 +1,3 @@
-import WhatToCook from "./what-to-cook";
 import ExpertAdvice from "./expert-advice";
 import DietaryPreferences from "./dietary-experience";
 import { SingleEAPostCard } from "../recipe-card/expert-advice-card";
@@ -78,7 +77,7 @@ const MOCKUP_WN_SECTION: RandomSectionProp = {
 
 const HomePage = () => {
   return (
-    <div className="w-full bg-blue-300 flex flex-col items-center justify-start">
+    <div className="w-full bg-[#fafafa] flex flex-col items-center justify-start">
       {/* recommend recipes */}
       <div className="w-full flex flex-col items-center justify-center bg-white">
         <RecommendCard />
@@ -88,9 +87,6 @@ const HomePage = () => {
       <div className="w-full bg-[url('/images/background/white_stone.jpg')]">
         <DietaryPreferences />
       </div>
-      {/*  */}
-      {/* seasonal ingredient */}
-      {/* <SeasonalIngredients /> */}
       {/* recipe collections */}
       <div className="w-full flex max-w-[1440px] ">
         <RecipeCollections />

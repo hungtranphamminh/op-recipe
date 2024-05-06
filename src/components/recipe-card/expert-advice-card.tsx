@@ -13,27 +13,27 @@ const ExpertAdviceDefaultCard = ({
   imgUrl,
 }: ExpertAdviceCardProp) => {
   return (
-    <div className="max-w-[700px]">
+    <article className="flex items-center bg-white group hover:scale-105 transition-all duration-200">
       {/* post img */}
-      <div className="w-[700px] h-[447px] rounded-[20px]">
+      <div className="w-[350px] relative z-10 aspect-w-10 aspect-h-3">
         <Image
           src={imgUrl}
           alt="ingredient img"
-          width={700}
-          height={447}
-          className="w-[700px] h-[447px] rounded-2xl"
+          style={{ objectFit: "cover" }}
+          className=""
+          fill
         />
       </div>
       {/* post info */}
-      <div className="py-4">
-        <p className="mb-4 font-bold text-[20px] leading-[29px] text-[rgb(51,51,51)] hover:underline">
+      <div className="p-4 grow max-w-[300px] flex flex-col items-center font-raleWay">
+        <h2 className="mb-4 font-semibold text-base text-primarydblue group-hover:text-primaryGolden group-hover:underline transition-all duration-200 text-center">
           {postName}
-        </p>
-        <p className="mb-2 font-normal text-[15px] leading-[22px] text-[rgb(80,80,80)]">
+        </h2>
+        <p className="mb-2 font-normal text-sm tracking-[0.05em] text-[#888]">
           {description}
         </p>
       </div>
-    </div>
+    </article>
   );
 };
 
