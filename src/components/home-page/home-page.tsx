@@ -79,7 +79,7 @@ const HomePage = () => {
   return (
     <div className="w-full bg-[#fafafa] flex flex-col items-center justify-start">
       {/* recommend recipes */}
-      <div className="w-full flex flex-col items-center justify-center bg-white">
+      <div className="w-full flex flex-col items-center justify-center">
         <RecommendCard />
         <RecommendedRecipes />
       </div>

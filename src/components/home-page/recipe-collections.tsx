@@ -3,6 +3,8 @@ import number from "@/images/home/collections/number.svg";
 import author from "@/images/landing/wtc/author.svg";
 import { MOCKUP_MAIN_POSTS } from "@/utils/consts/home/collection-posts";
 import { MOCKUP_SIDE_POSTS } from "@/utils/consts/home/collection-posts";
+import enter from "@/images/home/collections/enter.svg";
+import Link from "next/link";
 
 export default function RecipeCollections() {
   return (
@@ -114,6 +116,17 @@ export default function RecipeCollections() {
               </article>
             );
           })}
+        </div>
+        {/* nav */}
+        <div className="w-full flex items-center justify-end my-6 gap-4 font-raleWay text-primaryGolden">
+          <div className="grow h-[1px] bg-primaryGolden"></div>
+          <Link
+            href="/recipes"
+            className="flex px-6 py-4 gap-3 hover:scale-105 transition-all duration-200 border-primaryGolden border bg-[url('/images/background/pattern.jpg')]"
+          >
+            Explore more collections
+            <Image src={enter} alt="enter" width={24} height={24} />
+          </Link>
         </div>
       </div>
     </div>
