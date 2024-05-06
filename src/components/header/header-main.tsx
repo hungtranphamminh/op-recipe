@@ -49,6 +49,7 @@ export default function MainHeader() {
     /* TODO: attach api */
     updateUsername(MOCKUP_USER.username);
     updateAvatar(MOCKUP_USER.avatar);
+    updateUserId(MOCKUP_USER.userId);
   };
 
   const logOut = () => {
@@ -77,6 +78,7 @@ export default function MainHeader() {
 
   useEffect(() => {
     const token = GetAccountSession();
+    console.log("token is: ", token);
     if (token && userId === "") {
       fetchUserInfo(MOCKUP_USER.userId);
     }
