@@ -75,7 +75,7 @@ const MOCKUP_SINGLE_REC = {
 
 export default function SingleRecipe() {
   return (
-    <div className="bg-white w-full h-full pt-[100px]">
+    <div className="bg-white w-full h-full">
       {/* recipe summarize & image */}
       <SingleRecipeSummary recipeInfo={MOCKUP_SINGLE_REC} />
       {/* additional recipe info */}

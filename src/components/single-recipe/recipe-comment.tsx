@@ -1,6 +1,6 @@
 "use client";
 import { Rating } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import nullavatar from "@/images/profile/nullava.svg";
 import NullAvatar from "../profile/avatar";
@@ -56,6 +56,15 @@ const MOCKUP_COMMENT = [
 
 export default function SingleRecipeComment({ points, votes }: any) {
   const [comment, setComment] = useState("");
+  const [rating, setRating] = useState<any>(0);
+
+  const [comments, setComments] = useState<any[]>([]);
+
+  useEffect(() => {
+    setComments(MOCKUP_COMMENT);
+    console.log("again");
+  }, []);
+
   return (
     <div className="w-full flex items-start py-10">
       {/* ratings  */}
@@ -92,20 +101,18 @@ export default function SingleRecipeComment({ points, votes }: any) {
           {/* personal info */}
           <NullAvatar />
           {/* own comment box */}
-          <form className="w-full">
+          <div className="w-full">
             <div className="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
               <div className="px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800">
                 <label htmlFor="comment" className="sr-only">
                   Your comment
                 </label>
                 <textarea
-                  id="comment"
                   rows={4}
                   className="focus:outline-none w-full px-0 text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400"
                   placeholder="Have you tried this recipe? Leave a review!"
                   value={comment}
                   onChange={(e) => setComment(e.target.value)}
-                  required
                 ></textarea>
               </div>
               <div className="flex items-center justify-between px-3 py-2 border-t dark:border-gray-600">
@@ -113,6 +120,22 @@ export default function SingleRecipeComment({ points, votes }: any) {
                 <button
                   type="submit"
                   className="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-primarydblue rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-opacity-75"
+                  onClick={() => {
+                    setComments((temp) => {
+                      const newComments = [...temp];
+                      newComments.unshift({
+                        comment: [],
+                        author: "Gucci Bi",
+                        rating: 4,
+                        time: "1 second ago",
+                        likes: 0,
+                        content: comment,
+                      });
+                      setComment("");
+                      setRating(0);
+                      return newComments;
+                    });
+                  }}
                 >
                   Post comment
                 </button>
@@ -135,6 +158,10 @@ export default function SingleRecipeComment({ points, votes }: any) {
                         height: "20px",
                         width: "auto",
                       },
+                    }}
+                    value={rating}
+                    onChange={(event, newValue) => {
+                      setRating(newValue);
                     }}
                   />
                 </div>
@@ -192,11 +219,11 @@ export default function SingleRecipeComment({ points, votes }: any) {
                 </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
         {/* others */}
         <div className="w-full flex flex-col mt-4 px-2 py-1 gap-4">
-          {MOCKUP_COMMENT.map((item, index) => {
+          {comments.map((item, index) => {
             return (
               <div
                 className="font-renner w-full flex items-start pb-4 border-b"

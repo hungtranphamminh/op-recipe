@@ -2,7 +2,7 @@ import ExpertAdvice from "./expert-advice";
 import DietaryPreferences from "./dietary-experience";
 import { SingleEAPostCard } from "../recipe-card/expert-advice-card";
 import SeasonalIngredients from "./seasonal-ingre";
-import PersonalRecommendations from "./personal-rec";
+import PersonalRecommendations from "../recipes-main-page/personal-rec";
 
 import "swiper/css";
 import "swiper/css/navigation";

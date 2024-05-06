@@ -1,10 +1,14 @@
 "use client";
 import { useRecipeSearchParams } from "@/utils/store/search-store";
 import { useState, useEffect, useCallback } from "react";
-import { MOCKUP_RECIPES } from "@/utils/consts/recipe.const";
+import {
+  MOCKUP_BEEF_RECIPES,
+  MOCKUP_RECIPES,
+} from "@/utils/consts/recipe.const";
 import Image from "next/image";
 import authorblack from "@/images/landing/wtc/author-black.svg";
 import { Rating } from "@mui/material";
+import Link from "next/link";
 
 interface Recipe {
   title: string;
@@ -16,7 +20,8 @@ interface Recipe {
 }
 
 export default function Recipes() {
-  const { name, tags, ingredients, collections } = useRecipeSearchParams();
+  const { name, tags, ingredients, collections, hasSearch } =
+    useRecipeSearchParams();
   const [recipes, setRecipes] = useState<Recipe[]>();
 
   useEffect(() => {
@@ -26,14 +31,21 @@ export default function Recipes() {
   const fetchRecipeWithParams = useCallback(async () => {
     /* TODO: fetch recipe here */
     setRecipes(MOCKUP_RECIPES);
-  }, [name, tags, ingredients, collections]);
+    if (hasSearch) setRecipes(MOCKUP_BEEF_RECIPES);
+  }, [name, tags, ingredients, collections, hasSearch]);
+
+  useEffect(() => {
+    if (hasSearch) setRecipes(MOCKUP_BEEF_RECIPES);
+    else setRecipes(MOCKUP_RECIPES);
+  }, [hasSearch]);
 
   return (
     <div className="w-full flex flex-wrap items-center justify-center gap-4">
       {recipes?.map((recipe, index) => (
-        <div
+        <Link
+          href="/recipes/single-recipe?id=123E4f1"
           key={index}
-          className="w-[350px] flex flex-col transition-all duration-300 items-center justify-center relative mt-5 shadow-xl"
+          className="w-[350px] flex hover:cursor-pointer flex-col transition-all duration-300 items-center justify-center relative mt-5 shadow-xl"
         >
           {/* main image */}
           <div className="w-[340px] relative z-10">
@@ -101,7 +113,7 @@ export default function Recipes() {
               {'"' + recipe.description + '"'}
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
