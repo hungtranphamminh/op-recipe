@@ -87,7 +87,7 @@ export default function ThirdRecipeColumn({ recipes }: { recipes: Recipe[] }) {
       {/* find more */}
       <Link
         className="w-full p-4 uppercase bg-[url('/images/background/pattern.jpg')] hover:scale-105 transition-all duration-200"
-        href="/recipes"
+        href="/recipes?s=0"
       >
         <div className="p-5 bg-white tracking-[0.1em]">
           <div className="w-full flex items-center justify-between font-semibold text-base">
