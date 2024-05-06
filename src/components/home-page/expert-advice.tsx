@@ -1,7 +1,8 @@
 import ExpertAdviceDefaultCard from "../recipe-card/expert-advice-card";
 import { MOCKUP_EA_POSTS } from "@/utils/consts/home/expert-advice-posts";
-import more from "@/images/home/expert/more.jpg";
 import Image from "next/image";
+import Link from "next/link";
+import enter from "@/images/home/collections/enter.svg";
 
 const ExpertAdvice = () => {
   return (
@@ -43,6 +44,17 @@ const ExpertAdvice = () => {
             </div>
           );
         })}
+      </div>
+      {/* nav */}
+      <div className="w-full flex items-center justify-end my-6 gap-4 font-raleWay text-primaryGolden">
+        <div className="grow h-[1px] bg-primaryGolden"></div>
+        <Link
+          href="/recipes"
+          className="flex px-6 py-4 gap-3 hover:scale-105 transition-all duration-200 border-primaryGolden border bg-[url('/images/background/pattern.jpg')]"
+        >
+          More Expert Advices
+          <Image src={enter} alt="enter" width={24} height={24} />
+        </Link>
       </div>
     </div>
   );
