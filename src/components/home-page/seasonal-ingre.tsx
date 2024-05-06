@@ -62,12 +62,21 @@ const SeasonalIngredients = () => {
       {/* info */}
       <div className="w-full flex items-center">
         {/* desc */}
-        <div className="max-w-[450px] font-raleWay text-right text-lg leading-8 tracking-wide">
-          As summer arrives, indulge in the season's freshest flavors with our
-          handpicked selection of in-season ingredients. From juicy beef to
-          vibrant Swiss chard and zesty lemon, elevate your dishes with the
-          essence of summer bounty, including Brussels sprouts, sweet potatoes,
-          and green beans.
+        <div className="max-w-[450px] font-raleWay text-right text-lg leading-8 tracking-wide flex flex-col items-end">
+          <p className="w-fit">
+            As summer arrives, indulge in the season's freshest flavors with our
+            handpicked selection of in-season ingredients. From juicy beef to
+            vibrant Swiss chard and zesty lemon, elevate your dishes with the
+            essence of summer bounty, including Brussels sprouts, sweet
+            potatoes, and green beans.
+          </p>
+          <div>
+            <div className="mt-2.5 pt-[15px] w-full text-[#888]">
+              BY
+              <span className="ml-2 font-semibold text-[#545454]">Nom</span>
+              <span className="font-semibold text-primaryGolden">Nom</span>
+            </div>
+          </div>
         </div>
         {/* ingredients */}
         <div className="grow px-16 flex items-center justify-center gap-3 mt-10 flex-wrap">
