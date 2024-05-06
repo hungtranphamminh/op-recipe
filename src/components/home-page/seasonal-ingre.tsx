@@ -64,10 +64,10 @@ const SeasonalIngredients = () => {
         {/* desc */}
         <div className="max-w-[450px] font-raleWay text-right text-lg leading-8 tracking-wide flex flex-col items-end">
           <p className="w-fit">
-            As summer arrives, indulge in the season's freshest flavors with our
-            handpicked selection of in-season ingredients. From juicy beef to
-            vibrant Swiss chard and zesty lemon, elevate your dishes with the
-            essence of summer bounty, including Brussels sprouts, sweet
+            As summer arrives, indulge in this season &apos;s freshest flavors
+            with our handpicked selection of in-season ingredients. From juicy
+            beef to vibrant Swiss chard and zesty lemon, elevate your dishes
+            with the essence of summer bounty, including Brussels sprouts, sweet
             potatoes, and green beans.
           </p>
           <div>

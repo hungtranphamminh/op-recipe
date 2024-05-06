@@ -13,7 +13,7 @@ const ExpertAdvice = () => {
         </h1>
         <div className="w-[100px] h-[2px] bg-primaryGolden my-6"></div>
         <div className="font-alexBrush text-3xl tracking-widest text-[#888]">
-          Let's Learn the Secrets from the Experts
+          Learn the Secrets from the Experts
         </div>
       </div>
       {/* more */}
