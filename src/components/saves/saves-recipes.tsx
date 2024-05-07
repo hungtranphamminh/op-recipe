@@ -1,16 +1,51 @@
-import Recipes from "../recipes-main-page/recipes";
+import Image from "next/image";
+import Recipes from "./recipes";
+import search from "@/images/recipes/recipes/search.svg";
+import Link from "next/link";
 export default function SavesRecipes() {
   return (
     <div className="md:max-w-[1440px] w-full">
-      {/* doesnt know what for : D but i'll still keep it here just in case u know */}
-      <div className="w-full h-[100px]"></div>
-      <div className=" w-full flex items-start gap-6 relative">
+      {/* search bar */}
+      <div className="w-full flex items-center justify-end">
+        <div className="flex items-center border border-primaryGolden">
+          <input
+            type="text"
+            placeholder="Search for recipes, collections and posts"
+            className="bg-transparent border-0 outline-none focus:outline-none p-2 text-sm placeholder:text-sm w-[300px]"
+          />
+          <div className="p-2 bg-primaryGolden">
+            <Image src={search} alt="search icon" width={20} height={20} />
+          </div>
+        </div>
+      </div>
+      {/* navigation */}
+      <div className="w-full font-semibold flex items-center justify-center font-raleWay tracking-widest gap-3 border-b">
+        <Link
+          href="/saves"
+          className="text-primaryGolden w-[140px] text-center pb-2 border-b-2 border-primaryGolden"
+        >
+          Recipes
+        </Link>
+        <Link
+          href="/saves"
+          className="text-[#888] w-[140px] text-center pb-2 border-b-2 border-b-transparent"
+        >
+          Collections
+        </Link>
+        <Link
+          href="/saves"
+          className="text-[#888] w-[140px] text-center pb-2 border-b-2 border-b-transparent"
+        >
+          Expert Advices
+        </Link>
+      </div>
+      <div className=" w-full flex items-start gap-6 relative mt-6">
         {/* recipes */}
         <div className="grow">
           {/* recipes */}
           <Recipes />
           {/* pagination */}
-          <div className="flex flex-col items-center mt-14">
+          {/* <div className="flex flex-col items-center mt-14">
             <span className="text-sm text-gray-700 dark:text-gray-400">
               Showing{" "}
               <span className="font-semibold text-gray-900 dark:text-white">
@@ -64,7 +99,7 @@ export default function SavesRecipes() {
                 </svg>
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
