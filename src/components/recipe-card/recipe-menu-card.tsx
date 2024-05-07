@@ -111,25 +111,51 @@ export const RecipeSwiperCard = ({
   imgUrl,
 }: RecipeMenuProp) => {
   return (
-    <div className="w-[300px] mb-5">
+    <div className="w-[250px] mb-5 group shadow-md hover:scale-105 transition-all duration-200">
       {/* recipe img */}
-      <div className=" w-[300px] h-[395px] rounded-2xl">
+      <div className=" w-[250px] h-[295px] border border-primaryGolden">
         {imgUrl && (
           <Image
             src={imgUrl}
             alt="ingredient img"
-            width={300}
-            height={395}
-            className="w-[300px] h-[395px] rounded-2xl"
+            width={250}
+            height={295}
+            className="w-[250px] h-[295px] "
           />
         )}
       </div>
       {/* recipe info */}
-      <div className="px-2 pt-8 pb-2">
-        <p className="font-bold text-[rgb(51,51,51)] text-[20px] leading-[29x] mb-4 hover:underline">
+      <div className="px-2 pt-4 pb-2 h-[100px]">
+        <div className="flex justify-start items-center gap-1 mt-2.5 ">
+          <p className="text-xs">{rating?.toLocaleString()}</p>
+          <Rating
+            name="read-only"
+            value={rating}
+            readOnly
+            sx={{
+              "& .MuiRating-iconFilled": {
+                color: "#1A2433",
+              },
+              "& .MuiRating-iconEmpty": {
+                color: "gray",
+              },
+              "& .MuiRating-icon": {
+                marginRight: "6px", // adjust as needed
+              },
+              "& .MuiSvgIcon-root": {
+                height: "10px",
+                width: "auto",
+              },
+            }}
+          />
+          {/* votes */}
+          <div className="font-[300] text-xs">
+            {"("} 200 votes{")"}
+          </div>
+        </div>
+        <p className="font-semibold text-primarydblue text-base font-raleWay tracking-wider mb-4 hover:underline group-hover:text-primaryGolden transition-all duration-200">
           {postName}
         </p>
-        <Rating name="read-only" value={rating} readOnly size="small" />
       </div>
     </div>
   );

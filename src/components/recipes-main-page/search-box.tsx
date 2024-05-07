@@ -3,8 +3,16 @@ import { useRecipeSearchParams } from "@/utils/store/search-store";
 import Image from "next/image";
 import close from "@/images/recipes/close.svg";
 import plus from "@/images/recipes/plus.svg";
+import { useState } from "react";
 
 export default function SearchBox() {
+  const [nameParam, setNameParam] = useState("");
+  const [collectionParam, setCollectionParam] = useState("");
+  const [wholeCollections, setWholeCollections] = useState([]);
+  const [tagParam, setTagParam] = useState("");
+  const [wholeTags, setWholeTags] = useState<string[]>([]);
+  const [ingredientParam, setIngredientParam] = useState("");
+
   const {
     name,
     tags,
@@ -14,6 +22,7 @@ export default function SearchBox() {
     updateTags,
     updateIngredients,
     updateCollections,
+    updateSearch,
   } = useRecipeSearchParams();
 
   return (
@@ -22,6 +31,17 @@ export default function SearchBox() {
       <div className=" font-bold font-playball text-white text-3xl w-full h-[150px] flex justify-center items-center my-4 bg-[url('/images/footer/bg4.jpeg')] bg-[length:800px_500px] bg-center rounded-sm">
         Recipe <span className="text-primaryGolden ml-2">Compass</span>
       </div>
+
+      <button
+        onClick={() => {
+          console.log("update search");
+          if (nameParam !== "") updateSearch(true);
+          else updateSearch(false);
+        }}
+        className="w-full text-center py-2 bg-white text-primarydblue font-semibold  border-[0.5px] border-primarydblue hover:bg-primarydblue hover:text-white transition-all duration-200 shadow-lg"
+      >
+        Search
+      </button>
 
       {/* search box */}
       <div className="border p-4 w-full flex flex-col ">
@@ -32,9 +52,11 @@ export default function SearchBox() {
           className="border p-4 focus:outline-none"
           onChange={(e) => {
             updateName(e.target.value);
+            setNameParam(e.target.value);
           }}
-          value={name}
+          value={nameParam}
         />
+
         {/* collection param */}
         <div className="w-full mt-6">
           <div>Collections:</div>
@@ -47,7 +69,7 @@ export default function SearchBox() {
               onChange={(e) => {
                 updateName(e.target.value);
               }}
-              value={name}
+              value={collectionParam}
             />
             <div className="h-10 p-1">
               <button className="w-8 h-8 flex items-center justify-center rounded-lg bg-primarydblue">
@@ -94,12 +116,20 @@ export default function SearchBox() {
               placeholder="What are you looking for?"
               className="p-2 focus:outline-none grow rounded-l-lg"
               onChange={(e) => {
-                updateName(e.target.value);
+                setTagParam(e.target.value);
               }}
-              value={name}
+              value={tagParam}
             />
             <div className="h-10 p-1">
-              <button className="w-8 h-8 flex items-center justify-center rounded-lg bg-primarydblue">
+              <button
+                className="w-8 h-8 flex items-center justify-center rounded-lg bg-primarydblue"
+                onClick={() => {
+                  var temp = [...tags];
+                  temp.unshift(tagParam);
+                  updateTags(temp);
+                  setTagParam("");
+                }}
+              >
                 <Image src={plus} alt="plus" width={16} height={16} />
               </button>
             </div>
@@ -143,7 +173,7 @@ export default function SearchBox() {
               onChange={(e) => {
                 updateName(e.target.value);
               }}
-              value={name}
+              value={ingredientParam}
             />
             <div className="h-10 p-1">
               <button className="w-8 h-8 flex items-center justify-center rounded-lg bg-primarydblue">

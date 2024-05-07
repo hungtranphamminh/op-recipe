@@ -1,14 +1,17 @@
+"use client";
 import { Rating } from "@mui/material";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function SingleRecipeSummary({ recipeInfo }: any) {
+  const [save, setSave] = useState(false);
   return (
     <section className="border-b border-b-[rgb(226,221,204)]">
       <div className="w-full flex items-center justify-between">
         {/* desc */}
         <div className="grow flex flex-col items-center justify-center">
           {/* gourmet tag */}
-          <div className="mb-3 px-3 py-2 text-white text-xs bg-primaryGolden font-renner">
+          <div className="mb-3 px-3 py-2 text-white text-xs bg-orange-600 font-renner">
             GOURMET
           </div>
           {/* name */}
@@ -23,42 +26,60 @@ export default function SingleRecipeSummary({ recipeInfo }: any) {
             {recipeInfo.createdAt}
           </div>
           {/* Saved recipe */}
-          <button className="mb-10 flex items-center bg-[rgba(51,51,51,0.08)] hover:bg-[rgba(51,51,51,0.28)] px-[20px]">
-            <svg
-              className="ButtonIcon-YqaGo iwlhuX button-icon icon icon-bookmark"
-              width="32"
-              height="32"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Save Story</title>
-              <path
-                className="icon-bookmark-fill"
-                fill="#000"
-                fill-rule="evenodd"
-                d="M1.929.815h7.3v1h-6.3v12.323l4.4-2.514 4.4 2.514V9.25h1v6.611l-5.4-3.085-5.4 3.085V.816Z"
-                clip-rule="evenodd"
-              ></path>
-              <path
-                className="icon-bookmark-stroke"
-                fill="#000"
-                fill-rule="evenodd"
-                d="M11.744 6.911V1h1v5.911h-1Z"
-                clip-rule="evenodd"
-              ></path>
-              <path
-                className="icon-bookmark-stroke"
-                fill="#000"
-                fill-rule="evenodd"
-                d="M15.2 4.456H9.289v-1h5.91v1Z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <div className="text-xs  ml-2 font-renner py-[17px] ">
-              {" "}
-              SAVE RECIPE
-            </div>
+          <button
+            className={`mb-10 flex items-center w-[150px] 
+          ${
+            save
+              ? "bg-orange-600"
+              : "bg-[rgba(51,51,51,0.08)] hover:bg-[rgba(51,51,51,0.28)]"
+          } 
+          px-[20px]`}
+            onClick={() => setSave(!save)}
+          >
+            {!save && (
+              <svg
+                className="ButtonIcon-YqaGo iwlhuX button-icon icon icon-bookmark"
+                width="32"
+                height="32"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Save Story</title>
+                <path
+                  className="icon-bookmark-fill"
+                  fill="#000"
+                  fill-rule="evenodd"
+                  d="M1.929.815h7.3v1h-6.3v12.323l4.4-2.514 4.4 2.514V9.25h1v6.611l-5.4-3.085-5.4 3.085V.816Z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  className="icon-bookmark-stroke"
+                  fill="#000"
+                  fill-rule="evenodd"
+                  d="M11.744 6.911V1h1v5.911h-1Z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  className="icon-bookmark-stroke"
+                  fill="#000"
+                  fill-rule="evenodd"
+                  d="M15.2 4.456H9.289v-1h5.91v1Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            )}
+            {!save ? (
+              <div className="text-xs  ml-2 font-renner py-[17px] ">
+                {" "}
+                SAVE RECIPE
+              </div>
+            ) : (
+              <div className="text-sm  ml-2 tracking-widest py-[10px] text-white w-full text-center font-semibold font-raleWay">
+                {" "}
+                SAVED
+              </div>
+            )}
           </button>
           {/* rating */}
           <div className=" flex gap-1 items-center font-renner">

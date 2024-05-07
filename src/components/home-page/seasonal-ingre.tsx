@@ -50,22 +50,45 @@ const MOCKUP_SI_POSTS = [
 
 const SeasonalIngredients = () => {
   return (
-    <section className="py-5 w-full flex flex-col items-center justify-start">
+    <section className="py-5 w-full flex flex-col items-center justify-start mt-10 bg-[#fff]">
       {/* title */}
-      <h1 className="text-[24px] leading-[26px] font-medium text-[rgb(51,51,51)]">
-        SEASONAL INGREDIENTS
+      <h1 className="text-2xl font-medium text-[rgb(51,51,51)] font-raleWay tracking-[0.32em]">
+        SEASONAL
       </h1>
-      <div className="w-[100px] border-b-2 border-b-[rgb(235,0,0)] mt-4 mb-[40px]"></div>
+      <div className="w-[100px] h-[2px] bg-primaryGolden my-6"></div>
+      <div className="font-alexBrush text-3xl tracking-widest text-[#888]">
+        Enjoy the Very Best of this Season
+      </div>
       {/* info */}
-      <section className="w-full px-16 max-w-[1850px] flex items-center justify-center gap-4">
-        {MOCKUP_SI_POSTS.map((item, index) => {
-          return (
-            <div key={index}>
-              <SeasonalIngredientCard {...item} />
+      <div className="w-full flex items-center">
+        {/* desc */}
+        <div className="max-w-[450px] font-raleWay text-right text-lg leading-8 tracking-wide flex flex-col items-end">
+          <p className="w-fit">
+            As summer arrives, indulge in this season &apos;s freshest flavors
+            with our handpicked selection of in-season ingredients. From juicy
+            beef to vibrant Swiss chard and zesty lemon, elevate your dishes
+            with the essence of summer bounty, including Brussels sprouts, sweet
+            potatoes, and green beans.
+          </p>
+          <div>
+            <div className="mt-2.5 pt-[15px] w-full text-[#888]">
+              BY
+              <span className="ml-2 font-semibold text-[#545454]">Nom</span>
+              <span className="font-semibold text-primaryGolden">Nom</span>
             </div>
-          );
-        })}
-      </section>
+          </div>
+        </div>
+        {/* ingredients */}
+        <div className="grow px-16 flex items-center justify-center gap-3 mt-10 flex-wrap">
+          {MOCKUP_SI_POSTS.map((item, index) => {
+            return (
+              <div key={index}>
+                <SeasonalIngredientCard {...item} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </section>
   );
 };

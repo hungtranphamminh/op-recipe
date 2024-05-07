@@ -3,8 +3,7 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Mousewheel, Keyboard } from "swiper/modules";
 import { RecipeSwiperCard } from "../recipe-card/recipe-menu-card";
-
-// Import Swiper styles
+import "@/styles/swiper-diet.css";
 
 const MOCKUP_DP_POST = [
   {
@@ -81,16 +80,16 @@ const DietaryPreferences = () => {
   };
 
   return (
-    <div className="mt-14 max-w-[1600px] px-16">
+    <div className=" max-w-[1440px] px-16  mx-auto pb-[60px]">
       {/* section title */}
       <div className="w-full flex flex-col items-center justify-start pt-8">
-        <p className="text-[24px] leading-[26px] font-medium text-[rgb(51,51,51)]">
+        <p className="text-[24px] leading-[26px] text-primarydblue font-raleWay tracking-[0.1em] font-semibold">
           RECIPES BASED ON DIETARY PREFERENCES
         </p>
-        <div className="mt-4 mb-10 w-[100px] border-b-2 border-b-[rgb(235,0,0)] border-solid"></div>
+        <div className="mt-4 mb-10 w-[200px] border-b-2 border-b-primaryGolden border-solid"></div>
       </div>
       {/* main info  */}
-      <div className="mt-8">
+      <div className="">
         {/* category selector */}
         <div className="pt-2 pb-4 w-full items-center flex justify-center gap-3 mb-6">
           {PREFERENCES.map((item, index) => {
@@ -99,9 +98,9 @@ const DietaryPreferences = () => {
                 key={index}
                 className={`${
                   currentPref === index
-                    ? "bg-[rgb(51,51,51)] text-white  border-black"
-                    : "bg-[rgba(192,57,57,0.2)] text-[rgb(51,51,51)] border-transparent"
-                } text-[12px] leading-[17px] font-bold px-6 py-2 rounded-3xl border hover:border-black`}
+                    ? "bg-[rgb(51,51,51)] text-white  border-black border"
+                    : "bg-white border-primaryGolden border text-[rgb(51,51,51)] "
+                } text-[12px] leading-[17px] font-bold px-6 py-2 font-raleWay rounded-md border hover:border-primaryGolden hover:text-primaryGolden`}
                 onClick={() => handleSwitchPref(index)}
               >
                 {item}
@@ -112,9 +111,9 @@ const DietaryPreferences = () => {
         {/* post swiper */}
         <Swiper
           slidesPerView={5}
-          spaceBetween={170}
-          navigation={true}
-          mousewheel={true}
+          spaceBetween={0}
+          navigation={false}
+          mousewheel={false}
           keyboard={true}
           pagination={{
             clickable: true,
