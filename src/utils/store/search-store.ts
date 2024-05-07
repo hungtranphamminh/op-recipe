@@ -19,9 +19,9 @@ type Actions = {
 
 const useRecipeStore = create<State & Actions>((set) => ({
   name: '',
-  tags: ["Vegans", "Healthy", "Quick Meals"],
-  ingredients: ["Rice", "Noodle", "Beef", "Beans", "Pork", "Pepper", "Salmon"],
-  collections: ["Healthy Recipes", "Weekend Nights", "Spring Freshes"],
+  tags: [],
+  ingredients: [],
+  collections: [],
   hasSearch: false,
   updateName: (name) => set((state) => ({ ...state, name })),
   updateTags: (tags) => set((state) => ({ ...state, tags })),

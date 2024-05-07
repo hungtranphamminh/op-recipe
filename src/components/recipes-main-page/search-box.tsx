@@ -8,7 +8,9 @@ import { useState } from "react";
 export default function SearchBox() {
   const [nameParam, setNameParam] = useState("");
   const [collectionParam, setCollectionParam] = useState("");
+  const [wholeCollections, setWholeCollections] = useState([]);
   const [tagParam, setTagParam] = useState("");
+  const [wholeTags, setWholeTags] = useState<string[]>([]);
   const [ingredientParam, setIngredientParam] = useState("");
 
   const {
@@ -114,12 +116,20 @@ export default function SearchBox() {
               placeholder="What are you looking for?"
               className="p-2 focus:outline-none grow rounded-l-lg"
               onChange={(e) => {
-                updateName(e.target.value);
+                setTagParam(e.target.value);
               }}
               value={tagParam}
             />
             <div className="h-10 p-1">
-              <button className="w-8 h-8 flex items-center justify-center rounded-lg bg-primarydblue">
+              <button
+                className="w-8 h-8 flex items-center justify-center rounded-lg bg-primarydblue"
+                onClick={() => {
+                  var temp = [...tags];
+                  temp.unshift(tagParam);
+                  updateTags(temp);
+                  setTagParam("");
+                }}
+              >
                 <Image src={plus} alt="plus" width={16} height={16} />
               </button>
             </div>

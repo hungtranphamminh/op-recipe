@@ -5,7 +5,6 @@ import chickenfajitas from "@/images/recipes/recipes/chicken fajitas.jpeg"
 import cauliflowerflitter from "@/images/recipes/recipes/cauliflitter.jpg"
 import chickensalad from "@/images/recipes/recipes/chickensalad.jpg"
 import chickendpot from "@/images/recipes/recipes/chickenpop.jpg"
-import chocolate from "@/images/recipes/recipes/chocolatespread.jpeg"
 import lentilchili from "@/images/recipes/recipes/lentilchilli.jpeg"
 import dumpchicken from "@/images/recipes/recipes/dumpchicken.jpeg"
 import haddock from "@/images/recipes/recipes/bakedhaddock.jpeg"
@@ -22,7 +21,6 @@ import b4 from "@/images/recipes/recipes/beef/4.jpeg"
 import b5 from "@/images/recipes/recipes/beef/5.jpeg"
 import b6 from "@/images/recipes/recipes/beef/6.jpeg"
 import b7 from "@/images/recipes/recipes/beef/7.jpeg"
-import b8 from "@/images/recipes/recipes/beef/8.jpeg"
 import b9 from "@/images/recipes/recipes/beef/9.jpeg"
 import b10 from "@/images/recipes/recipes/beef/10.jpeg"
 import b11 from "@/images/recipes/recipes/beef/11.jpeg"
@@ -238,7 +236,7 @@ export const MOCKUP_BEEF_RECIPES = [
     description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
   },
   {
-    title: "Beef Bourguignon",
+    title: "Beef Stew",
     imgUrl: b1.src,
     rating: 5.0,
     votes: 200,
@@ -246,7 +244,7 @@ export const MOCKUP_BEEF_RECIPES = [
     description: "Cauliflower can shine in many forms. This recipe shows how simple it is to turn the florets into a healthy, low-carb meal or side dish--our version has only about 1/4 of the carbohydrates in rice. With the olive oil and browned onions, the cauliflower has enough flavor to satisfy by itself, and it can also be a base for stir fries, beans and rice or anything else you would eat with rice."
   },
   {
-    title: "Beef Bourguignon",
+    title: "Slow Roasted Beef Tenderloin",
     imgUrl: b2.src,
     rating: 4.5,
     votes: 199,
@@ -255,7 +253,7 @@ export const MOCKUP_BEEF_RECIPES = [
 
   },
   {
-    title: "Filet of Beef Bourguignon",
+    title: "Rague of Beef with Creamy Polenta",
     imgUrl: b3.src,
     rating: 4.5,
     votes: 100,
@@ -273,7 +271,7 @@ export const MOCKUP_BEEF_RECIPES = [
 
   },
   {
-    title: "Beef Bourguignon",
+    title: "Spicy Tangerine Beef",
     imgUrl: b5.src,
     rating: 4.5,
     votes: 100,
@@ -282,7 +280,7 @@ export const MOCKUP_BEEF_RECIPES = [
 
   },
   {
-    title: "Beef Bourguignon",
+    title: "Parker's Beef Stew",
     imgUrl: b6.src,
     rating: 4.5,
     votes: 100,
@@ -291,7 +289,7 @@ export const MOCKUP_BEEF_RECIPES = [
 
   },
   {
-    title: "Beef Bourguignon",
+    title: "Beef Stroganoff",
     imgUrl: b7.src,
     rating: 4.5,
     votes: 100,
@@ -300,7 +298,7 @@ export const MOCKUP_BEEF_RECIPES = [
 
   },
   {
-    title: "Beef Bourguignon",
+    title: "The Ultimate Beef Stew",
     imgUrl: b9.src,
     rating: 4.5,
     votes: 100,
@@ -309,7 +307,7 @@ export const MOCKUP_BEEF_RECIPES = [
 
   },
   {
-    title: "Beef Bourguignon",
+    title: "Beef Goulash",
     imgUrl: b10.src,
     rating: 4.5,
     votes: 100,
