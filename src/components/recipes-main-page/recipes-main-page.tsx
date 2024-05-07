@@ -32,7 +32,7 @@ export default function RecipesMainPage() {
   return (
     <div className="w-full relative py-10 flex flex-col items-center">
       <div className="w-full fixed -top-20 left-0 h-[100vh] bg-[url('/images/background/recipes-bg.jpg')] bg-cover bg-no-repeat bg-center"></div>
-      <div className="w-full relative z-20 h-[800px] flex flex-col items-center justify-center">
+      <div className="w-full relative z-20 h-[600px] flex flex-col items-center justify-center">
         {/* title */}
         <div className="font-raleWay text-6xl text-white tracking-widest">
           DELICACIES FOR EVERYONE
@@ -52,7 +52,7 @@ export default function RecipesMainPage() {
                 className={`${
                   section === index ? "text-primaryGolden " : "text-gray-400 "
                 } text-xl font-semibold w-[180px] group flex tracking-wide items-center justify-center py-1 font-raleWay border-b border-[#e1e1e1] relative uppercase
-                  hover:text-primarydblue
+                  hover:text-primaryGolden
                 `}
                 onClick={() => {
                   router.push(
@@ -66,7 +66,7 @@ export default function RecipesMainPage() {
                 <div
                   className={`absolute -bottom-[2px] rounded-lg h-[4px] left-0
                   ${section === index ? " bg-primaryGolden w-[170px]" : "w-0"}
-                  group-hover:w-[170px] transition-all duration-500 group-hover:bg-orange-200
+                  group-hover:w-[170px] transition-all duration-500 group-hover:bg-primaryGolden
                   `}
                 ></div>
               </button>
