@@ -23,6 +23,7 @@ const config: Config = {
         playball: ['var(--font-pb)'],
         alexBrush: ['var(--font-ab)'],
         raleWay: ['var(--font-raleway)'],
+        kaushan: ['var(--font-kaushan)'],
 
       },
       colors: {
