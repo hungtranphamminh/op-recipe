@@ -56,9 +56,9 @@ export default function RecipesMainPage() {
                 `}
                 onClick={() => {
                   router.push(
-                    pathname + "?" + createQueryString("s", index.toString())
+                    pathname + "?" + createQueryString("s", index.toString()),
+                    { scroll: false }
                   );
-                  // setSection(index);
                 }}
                 key={index}
               >
