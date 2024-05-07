@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="relative bottom-0 left-0 w-full bg-black py-12">
-      <section className="w-full max-w-[1440px] px-10 ml-10 text-white">
+      <section className="w-full max-w-[1440px] px-10 mx-auto text-white">
         {/* top section */}
         <div className="w-full px-10">
           <div className="w-full flex items-start justify-between">
